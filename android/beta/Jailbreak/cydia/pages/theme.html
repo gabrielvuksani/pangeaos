@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>HexBreak</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="https://taig9.com/12/cydia/pages/css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="https://taig9.com/12/cydia/pages/css/my-app.css">
+    <style>
+      .list-block ul:after {
+        height: 3px;
+      }
+    </style>
+    <style>
+      .badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 1px;
+    padding: 0.2em 0.8em;
+    background-color: #014ae6;
+    color: #fff;
+    font-size: 13px;
+    height: 28px;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+          <div class="navbar"> 
+           <div class="navbar-inner navbar-on-center">
+
+                       <!-- <div class="left">
+                            <a href="#" onclick="myFunction()" class="">Back</a>
+                        </div>
+                        <script>
+                                function myFunction() {
+                                  onclick="parent.location='../index.html'"
+                                // location.reload();
+                                }
+                        </script> -->
+
+
+                        <a href="#" class="back link" onclick="window.history.go(-1);return false;"> <i class="icon icon-back"></i><span>Back</span></a>
+                        <div class="left">
+                        <script type="text/javascript"> 
+                                   
+                                    function popupwnd(url, toolbar, menubar, locationbar, resize, scrollbars, statusbar, left, top, width, height) 
+                                    { 
+                                    if (left == -1) 
+                                    { 
+                                    left = (screen.width/2)-(width/2); 
+                                    } 
+                                    if (top == -1) 
+                                    { 
+                                    top = (screen.height/2)-(height/2); 
+                                    } 
+                                    var popupwindow = this.open(url, '', 'toolbar=' + toolbar + ',menubar=' + menubar + ',location=' + locationbar + ',scrollbars=' + scrollbars + ',resizable=' + resize + ',status=' + statusbar + ',left=' + left + ',top=' + top + ',width=' + width + ',height=' + height); 
+                                    } 
+                                    
+                                 </script> 
+                                 
+
+                        </div></a>
+                        <div class="center sliding" style="left: 5px; transform: translate3d(0px, 0px, 0px);">
+                            Themes
+                        </div>
+                        
+                    </div>
+          </div>
+          <!-- Navbar inner for About page-->
+          <div data-page="about" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">About Us</div>
+          </div>
+          <!-- Navbar inner for Services page-->
+          <div data-page="services" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">Services</div>
+          </div>
+          <!-- Navbar inner for Form page-->
+          <div data-page="form" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">Form</div>
+          </div>
+
+        <!-- </div> -->
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+         <div class="pages navbar-through toolbar-through"> 
+          <div data-page="index" class="page">
+            <div class="page-content" style="padding-top: 5px;">
+              <!-- <div class="content-block-title">What about simple navigation?</div> -->
+              <div><h2 style="margin-top: 4px; margin-bottom: -10px; margin-left: 5%;">Featured Themes</h2></div><br />
+              <div class="list-block" style="margin: 20px 0; font-size: 17px;">
+                <ul>
+                  <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=031'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/lite_express.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Lite Express</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=007'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="../../../settings/icons/cleanhouse.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">CleanHouse</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=006'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="../../../settings/icons/jailbreak.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">NoDockBG</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=005'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="../../../settings/icons/jailbreak.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">iNoLabels</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=004'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="../../../settings/icons/respring.jpg" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Respring+</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=032'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/stock_qetto.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Stock Qetto</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=036'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/anroid_blawd.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Anroid Blawd</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=030'" class="item-link">
+                      <div class="item-content"><div class="item-media"><!-- <i class="icon windows"></i> --><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/fairy_tail.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"> </div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Fairy Tail</div>
+                        </div>
+                        <span class="badge" id="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span>  
+                      </div></a></li>              
+                  <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=033'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/gold_blackberry.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Gold BlackBerry</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=037'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/behind_the_snow.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Metalic Supernova</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=034'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/blue_water.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Blue Water Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=035'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/blue_metal.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Blue Metal Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>                                        
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=038'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/yellow_honey_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Yellow Honey</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=039'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/wood_combination_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Wood Combination</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>                    
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=041'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/sea_waves_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Sea Waves Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=042'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/red_glossy_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Red Glossy Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=043'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/red_awesome_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Red Awesome</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=040'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/sharp_eye_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Sharp Eye Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=044'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/orkut_pore_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Orkut Pore Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=055'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/black_gcons.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Black Gcons</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=045'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/mummy_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Mummy Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=046'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/blue_ash.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Blue Ash</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>                
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=048'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/green_lantern.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Green Lantern</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=049'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/galaxy_x_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Galaxy X Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=050'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/metro_silver_hd.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Metro Silver HD</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=051'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/metro_blue.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Metro Blue</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=047'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/blue_print.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Blue Print</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=052'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/ilight_hd.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">iLight HD</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=053'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/green_an.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Green Android</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=054'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/wood_fu.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Wood Fusion</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>                
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=056'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/yellow_honeycomb.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Yellow Honeycomb</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=057'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/windows_8.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Windows 8</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=066'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/love_angel_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Love Angel Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=058'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/blue_velvet.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Blue Velvet</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=059'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/dreams.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Dreams</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=060'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/hello_kitty.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Hello Kitty</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=061'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/crack_mud.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Crack Mud</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=062'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/ancient_gate.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Ancient Gate</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=063'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/mirror_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Mirror Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=074'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/metro_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Metro Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=064'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/magic_cold_man.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Magic Wood Man</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>                                        
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=067'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/funny_devil.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Funny Devil</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=068'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/floting_grass.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Floting grass</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=069'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/behind_the_snow.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Behind the Snow</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=070'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/blossom_circle.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Blossom Circle</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=071'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/thug_pets_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Thug Pets Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=072'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/red_bubble_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Red Bubble Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=073'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/purple_art_theme.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Purple Art Theme</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>                   
+                      <li><a href="#" onclick="parent.location='../app-installfee2.html?apps=075'" class="item-link">
+                      <div class="item-content"><div class="item-media"><img src="https://taig9.com/12/cydia/pages/images/idiy/icons/hex_star.png" style="width: 44px; height: 44px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;"></div>
+                        <div class="item-inner" style="background-position: calc(100% - 15px) 20px; background-size: 15px 30px;"> 
+                          <div class="item-title">Hex star</div>
+                          <span class="badge" style="position: absolute; top: 0; right: 0px; border-top-left-radius: 0px;  border-bottom-left-radius: 8px; padding: 0.2em 0.4em; background-color: #014ae6;  color: #fff;  font-size: 11px; font-weight: bold; height: 22px;">
+                          <label>
+                              <p style="margin-top: 0px; margin-bottom: 0px; font-size: 16px;">Free</p>
+                          </label>                          
+                        </span> 
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+             </div>
+          </div> 
+      </div>
+    </div>
+  </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="https://taig9.com/12/cydia/pages/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="https://taig9.com/12/cydia/pages/js/my-app.js"></script>
+  </body>
+</html>

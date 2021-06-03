@@ -1,0 +1,218 @@
+
+.header {
+  padding: 0px 0px 60px 0px;
+  background-size:  60%;
+  background-position: 130%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.header-first > h1 {
+  
+  font-weight: 500;
+
+}
+.iphone {
+  display: none;
+}
+
+.header-second {
+  display: none;
+  margin: 0px 0px 0px 0px;
+}
+
+.iphones {
+  max-width: 100%;
+  width: 720px;
+  
+}
+
+.header-first {
+  display: contents;
+  justify-content: center;
+  max-width: 475px;
+  min-width: 440px;
+  margin: 0px 100px 0px 100px;
+}
+
+.header-first p {
+  text-align: left;
+  margin: 50px 0px 50px 0px;
+  max-width: 410px;
+  
+}
+
+
+.buttons {
+  
+  align-items: center;
+}
+
+.logo {
+  max-width: 70px;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+    .iphones{
+      display: none;
+    }
+    
+    .header {
+      flex-direction: column;
+      background-image: none;
+      height: auto;
+    }
+    .header-first{
+      
+      flex-direction: column;
+      align-items: center;
+      margin: 70px 60px 0px 60px;
+      max-width: 100%;
+    }
+    
+    .header-first > h1 {
+    
+      text-align: center;
+    
+    }
+    
+    .header-first > p {
+    
+      text-align: center;
+    
+    }
+    
+    .header-second {
+      display: block;
+    }
+    
+    .iphone {
+      margin: 70px auto;
+      display: block;
+      max-width: 50%;
+      height: auto;
+    }
+
+    
+
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+
+.iphones{
+  display: none;
+}
+
+.header {
+  background-image: none;
+  height: auto;
+}
+.header-first{
+  
+  align-items: center;
+  margin: 70px 20px 0px 20px;
+  max-width: 100%;
+}
+
+.header-first > h1 {
+
+  text-align: center;
+
+}
+
+.header-first > p {
+
+  text-align: center;
+
+}
+
+.header-second {
+  display: block;
+}
+
+.iphone {
+  margin: 70px auto;
+  display: block;
+  max-width: 80%;
+  height: auto;
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 420px) {
+
+  .header {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 30px 0px 30px;
+  }
+
+  
+
+  .header-first {
+    
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    min-width: auto;
+  }
+
+  .header-first a {
+    display: inline-flex;
+  }
+
+  .header-first a span {
+    margin: 0px 0px 0px 5px;
+  }
+
+  .logo {
+    max-width: 70px;
+  }
+
+  .header-first h1 {
+    text-align: center;
+  }
+
+  .header-first p {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .header-first a {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .header-first a > span {
+    display: inline-block;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .iphone {
+    max-height: 90vh;
+    max-width: 100%;
+    height: auto;
+    margin: 0px 0px 30px 0px;
+    display: block;
+  }
+
+  .iphones {
+    display: none;
+  }
+
+}

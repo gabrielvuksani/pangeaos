@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+body, html {
+	position:relative;
+	width:100%;
+	height:100%;
+	margin:0;
+}
+
+div {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;	
+}
+
+@font-face {
+	font-family: iphone;
+	src: url("iphone.otf") format("opentype");
+}
+
+@font-face {
+	font-family: iphone-condensed;
+	src: url("iphone-condensed.otf") format("opentype");
+}
+
+@font-face {
+	font-family: iphone-lite;
+	src: url("iphone-lite.otf") format("opentype");
+}
+
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0%   { -webkit-transform: rotate(0deg);  }
+  50%   { -webkit-transform: rotate(-2.5deg);  }
+  100%   { -webkit-transform: rotate(2.5deg);  }
+}
+@-moz-keyframes NAME-YOUR-ANIMATION {
+  0%   { transform: rotate(0deg);  }
+  25%   { transform: rotate(-10deg);  }
+  50%   { transform: rotate(0deg);  }
+  75%   { transform: rotate(10deg);  }
+  100%   { transform: rotate(0deg);  }
+}
+@-o-keyframes NAME-YOUR-ANIMATION {
+  0%   { transform: rotate(0deg);  }
+  25%   { transform: rotate(-10deg);  }
+  50%   { transform: rotate(0deg);  }
+  75%   { transform: rotate(10deg);  }
+  100%   { transform: rotate(0deg);  }
+}
+@keyframes NAME-YOUR-ANIMATION {
+  0%   { transform: rotate(0deg);  }
+  50%   { transform: rotate(-2.5deg);  }
+  100%   { transform: rotate(2.5deg);  }
+}
+
+.shake {
+	-webkit-animation: NAME-YOUR-ANIMATION 0.2s infinite; /* Safari 4+ */
+	-moz-animation:    NAME-YOUR-ANIMATION 0.2s infinite; /* Fx 5+ */
+	-o-animation:      NAME-YOUR-ANIMATION 0.2s infinite; /* Opera 12+ */
+	animation:         NAME-YOUR-ANIMATION 0.2s infinite; /* IE 10+, Fx 29+ */
+}
+
+.icon-box {
+	position:relative;
+	display:inline-block;
+	width:calc((100% / 4) - 4px);
+	text-align:center;	
+	padding:0; 
+	margin:0; margin-top:1vh;
+	-webkit-user-select: none !important;
+	-webkit-user-callout: none !important;
+	-webkit-touch-callout: none !important;
+}
+
+.icon-box-footer {
+	position:relative;
+	display:inline-block;
+	width:calc((100% / 4) - 4px);
+	text-align:center;	
+	padding:0; 
+	margin:0; margin-top:1vh;
+	-webkit-user-select: none !important;
+	-webkit-user-callout: none !important;
+	-webkit-touch-callout: none !important;
+}
+
+.icon {
+	width:10.5vh;
+	height:10.5vh;
+	cursor:pointer;
+	border-radius:15px;
+	-webkit-user-select: none !important;
+	-webkit-user-callout: none !important;
+	-webkit-touch-callout: none !important;
+	background-color:rgba(0,0,0,0.5);
+}
+
+.icon-description {
+	margin-top:2px;
+	position:relative;
+	color:#fff; font-family:iphone; font-size:2.25vh;
+	line-height:1em;
+}
+
+.icon-disabled {
+	opacity:0.4;	
+}
+
+.remove_app {
+	position:absolute;
+	top:-1.75vh; left:3px;
+	width:4.5vh; height:4.5vh;
+	background-color:#CCC;
+	background-image:url('#');
+	background-size:2.5vh;
+	background-position:center;
+	background-repeat:no-repeat;
+	border-radius:50%;
+	-webkit-transform:scale(0);
+	transform:scale(0);
+
+	transition:all 0.3s;
+	opacity:0;
+}
+
+.remove_app_show {
+	-webkit-transform:scale(1);
+	transform:scale(1);
+	opacity:1;	
+	transition:all 0.3s;
+}
+
+
+
+
+.circle {
+	display:inline-block;
+	border-radius: 50%;
+	width: 14px;
+	height: 14px; 
+	background-color:#fff;
+	margin:7px 8px;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.border-box {
+	-webkit-box-sizing:border-box;	
+	-moz-box-sizing:border-box;	
+	-ms-box-sizing:border-box;	
+	-o-box-sizing:border-box;	
+	
+}
+
+.brightness {
+	pointer-events:none; 
+	position:absolute; top:0; right:0; bottom:0; left:0; background-color:#000; z-index:3147483647; 	
+}

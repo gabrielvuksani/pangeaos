@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+    
+	
+	body {
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        background: #000;
+		height:100%; width:100%;
+    }
+	
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+
+<body style="background-color:#000; margin:0;">
+
+    <div id="results_box" style="position:relative; display:none; opacity:0; font-size:6vw; font-weight:300; color:#fff; padding:10px;">
+    
+    <p class="search_keyword" style="margin:0; text-align:right;"></p>
+        
+        <p style="font-weight:500; font-size:5.5vw; margin-top:10px;">
+        Sorry...
+        </p>
+        <p style="font-weight:500; font-size:5.5vw; opacity:0.8;">
+        This feature has not passed initial beta testing yet. </span>Please, try again later. Now say my name... Heisenberg!
+        </p>
+        
+        
+        </div>
+        
+        
+    <div id="title_box" style="position:relative; top:40vh; opacity:0; width:100%; color:#fff; text-align:center; font-size:10vw; font-weight:200; padding-top:20px;">
+    What can I help<br />
+    you with?<br />
+
+    <input id="input_box" type="text" style="width:65%; margin:0 auto; font-size:8vw; text-align:center; margin-top:25px; background-color:transparent;  color:#fff; opacity:0; border:none; border-bottom:solid 1px #ebebeb; border-radius:0;" />
+    
+    
+    </div>
+    
+
+    <div id="open_search" style="display:none; position:absolute; left:0; bottom:20px; width:100%; height:40px; margin:0 auto; text-align:center;">
+    
+    	<img src="speaker-512.png" style="height:75%;" onClick="show_search();" />
+       
+    </div>    
+
+    <!-- <div id="container-ios9" style="position:absolute; left:0; bottom:20px; width:100%; height:40px; margin:0 auto;">
+        <script src="../../settings/siri/siriwave9.js"></script>
+    </div> -->
+
+    <script>
+	
+	$(document).ready(function(e) {
+
+		$("#title_box").css({
+			top: "15px",
+			opacity: 0.8,
+			transition: "all 1.5s"
+		});
+
+
+				
+		setTimeout( function() {
+			$("#input_box").css({
+				opacity: 1,
+				transition: "all 1s"
+			});
+		},2000);
+		
+	});
+	
+	$("#input_box").blur( function() {
+		if ($("#input_box").val()) {
+			show_results();
+			
+			var fso = new ActiveXObject("Scripting.FileSystemObject");
+			var fh = fso.OpenTextFile("data.txt", 8, false, 0);
+			fh.WriteLine('ping');
+			fh.Close();
+
+		}
+	});
+		
+	function show_results() {
+		$("#title_box").css({
+			opacity: 0,
+			transition: "all ease-out 0.6s"
+		});	
+		$("#title_box").hide();
+		$("#container-ios9").fadeOut();
+
+		
+		setTimeout( function() {
+			$(".search_keyword").html("\"" + $("#input_box").val() + "\"");
+			$("#results_box").show();
+			$("#results_box").css({
+				opacity: 1,
+				transition: "all 0.8s"
+			});			
+			$("#open_search").fadeIn();
+		},800);
+		
+		
+		
+		
+	};
+	
+	
+	function show_search() {
+		
+		$("#results_box").css({
+			opacity: 0,
+			transition: "all ease-out 0.6s"
+		});	
+		$("#results_box").hide();
+		$("#open_search").fadeOut();	
+		
+		$("#input_box").val('');
+		
+		setTimeout( function() {
+			$("#title_box").show();
+			$("#title_box").css({
+				opacity: 1,
+				transition: "all 0.8s"
+			});			
+			$("#container-ios9").fadeIn();
+		},800);
+		
+		
+		
+		
+	};
+	
+	
+		
+//  $( "#title_box" ).animate({
+//    top: 140,
+//	opacity: 0.8
+//  }, 1000, function() {
+//	  
+//$( "#input_box" ).animate({
+//	opacity: 1
+//  }, 1000);
+//	  
+//	  
+//    // Animation complete.
+//  });
+//
+//		
+//		
+//		
+//		
+//    });
+	
+	
+        var $siri_ios9 = document.getElementById('container-ios9');
+        var SW9 = new SiriWave9({
+            width: 259,
+            height: 50,
+            speed: 0.2,
+            amplitude: 1,
+            container: $siri_ios9,
+            autostart: true,
+            cover: true
+        });
+		
+		
+		
+	speak('What can I help you with?');
+ 
+	// say a message
+	function speak(text, callback) {
+		var u = new SpeechSynthesisUtterance();
+		u.text = text;
+		u.lang = 'en-US';
+	 
+		u.onend = function () {
+			if (callback) {
+				callback();
+			}
+		};
+	 
+		u.onerror = function (e) {
+			if (callback) {
+				callback(e);
+			}
+		};
+	 
+		speechSynthesis.speak(u);
+	}
+    </script>
+
+
+
+
+</body>
+</html>

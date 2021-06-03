@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name = "format-detection" content = "telephone=no">
+<script type="text/javascript" src="../settings/js/inobounce.js"></script>
+<title>iNuclearApp</title>
+
+<link rel="stylesheet" href="../settings/framework7/dist/css/framework7.ios.min.css">
+<link rel="stylesheet" href="../settings/framework7/dist/css/framework7.ios.colors.min.css">
+<link rel="stylesheet" type="text/css" href="../settings/styles/home.css">
+<script src="../settings/js/jquery-2.1.4.min.js"></script>
+<script src="../settings/framework7/slider/dist/js/swiper.min.js"></script>
+
+<script type="text/javascript" src="inobounce.js"></script>
+      <script type="text/javascript">
+         iNoBounce.enable();
+      </script>
+
+<style>
+
+.home_background {
+	position:absolute;
+	width:100%; height:100%;
+	background-image:url('../apps/settings/wallpaper/wallpaper/android-wallpaper.jpg');
+	background-color:#000;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:bottom;
+	overflow:hidden;
+	opacity:0;
+}
+
+.footer_background {
+	background-image:url('../apps/settings/wallpaper/wallpaper/android-wallpaper.jpg');
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	background-position:bottom;
+}
+
+.home_page {
+	position:relative; overflow:hidden;
+	width:100%; height:100%;
+	opacity:0;
+	overflow-y:auto; -webkit-overflow-scrolling: touch; 
+	overflow-x: hidden;
+	background:none !important;
+}
+</style>
+
+
+
+
+
+
+
+</head>
+<body class="theme-white layout-dark" style="background-color:#000; -webkit-user-select:none; -webkit-user-callout: none;">
+
+<div id="background" class="home_background"></div>
+
+<div class="views" style="background:none !important;">
+	<div class="view view-main" style="background:none !important;">
+  		<div class="pages" style="background:none;">
+			<div data-page="index" class="page toolbar-fixed" style="background:none !important;">
+				<div id="loader" style="position:absolute; z-index:20001;"></div>
+
+                <div id="home-page" class="page-content home_page">
+                  	<div id="swipper-box" class="swiper-container expand_box" style="position:relative; padding:0; margin:0; width:100%; height:100%; overflow:hidden; ">
+                        <div class="swiper-wrapper" style="position:relative; padding:0; margin:0; width:100%; height:100%; height:100%;  z-index:1000;">
+
+                            <div class="swiper-slide" style="position:relative; padding:0; margin:0; width:100%; height:100%;">
+                                <div style="height:1vh;"></div>
+
+
+<div id="hexbreak-icon-box" class="icon-box-footer" style="text-align:center;">
+   	<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+        <img id="hexbreak" src="../settings/icons/hexbreak.png" class="icon" onclick="window.location.href = '../Jailbreak/cydia/index.html'" alt="HexBreak" />
+        <div class="icon hexbreak-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+	</div>
+	<div class="icon-description">HexBreak</div>
+</div>
+
+<div id="app_store-icon-box" class="icon-box-footer" style="text-align:center;">
+   	<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+        <img id="icloud_dns" src="../settings/android/calculator.png" class="icon" onclick="window.location.href = '../apps/calculator/home.html'" alt="Calculator" />
+        <div class="icon icloud_dns-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+	</div>
+	<div class="icon-description">Calculator</div>
+</div>
+
+<div id="calendar-icon-box" class="icon-box" style="text-align:center;">    
+	<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+		<img id="calendar" src="../settings/android/calendar.png" class="icon" onclick="load_page(this.id,'../apps/calender/calender.html',0,'Calendar','calendar');" />
+		<div class="icon calendar-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+		<div class="remove_app" onClick="remove_app('calendar-icon-box','76');"></div>
+	</div>
+	<div class="icon-description">Calendar</div>
+</div>    
+
+<div id="dropbox-icon-box" class="icon-box" style="text-align:center;">    
+	<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+		<img id="dropbox" src="../settings/icons/dropbox.jpg" class="icon" onclick="load_page(this.id,'http://www.dropbox.com/',0,'Dropbox','dropbox');" />
+		<div class="icon dropbox-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+		<div class="remove_app" onClick="remove_app('dropbox-icon-box','6');"></div>
+	</div>
+	<div class="icon-description">Dropbox</div>
+</div>   
+
+<div id="notes-icon-box" class="icon-box" style="text-align:center;">    
+	<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+		<img id="evernote" src="../settings/android/notes.png" class="icon" onclick="load_page(this.id,'https://anotepad.com/',2,'Notes','notes');" />
+		<div class="icon notes-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+		<div class="remove_app" onClick="remove_app('notes-icon-box','58');"></div>
+	</div>
+	<div class="icon-description">Notes</div>
+</div>    
+
+<div id="maps-icon-box" class="icon-box" style="text-align:center;">    
+	<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+		<img id="maps" src="../settings/android/gmaps.png" class="icon" onclick="load_page(this.id,'https://maps.google.com/',0,'Maps','maps');" />
+		<div class="icon maps-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+		<div class="remove_app" onClick="remove_app('maps-icon-box','4');"></div>
+	</div>
+	<div class="icon-description">Maps</div>
+</div>
+<div id="clock-icon-box" class="icon-box" style="text-align:center;">    
+	<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+		<img id="clock" src="../settings/android/watch.png" class="icon" onclick="load_page(this.id,'http://www.clocktab.com/',0,'Clock','clock');" />
+		<div class="icon clock-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+		<div class="remove_app" onClick="remove_app('clock-icon-box','4');"></div>
+	</div>
+	<div class="icon-description">Clock</div>
+</div>
+<div id="weather-icon-box" class="icon-box" style="text-align:center;">    
+	<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+		<img id="weather" src="../settings/icons/weather.png" class="icon" onclick="load_page(this.id,'https://www.worldweatheronline.com/',0,'Weather','weather');" />
+		<div class="icon weather-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+		<div class="remove_app" onClick="remove_app('weather-icon-box','5');"></div>
+	  </div>
+	<div class="icon-description">Weather</div>
+  </div>     
+</div>
+		<div class="swiper-slide">
+	  <div style="height:1vh;"></div>
+
+	<div id="Audiomack-icon-box" class="icon-box" style="text-align:center;">    
+		<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+			<img id="Audiomack" src="../settings/icons/Audiomack.png" class="icon" onclick="load_page(this.id,'http://www.audiomack.com/',0,'Audiomack','Audiomack');" />
+			<div class="icon Audiomack-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+			<div class="remove_app" onClick="remove_app('Audiomack-icon-box','82');"></div>
+		</div>
+		<div class="icon-description">Audiomack</div>
+	</div>    
+		<!-- <div id="ibiza_radio-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="ibiza_radio" src="../settings/android/ibiza_radio.jpg" class="icon" onclick="load_page(this.id,'http://www.ibizaglobalradio.com/player',0,'Ibiza Radio','ibiza_radio');" />
+				<div class="icon ibiza_radio-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('ibiza_radio-icon-box','12');"></div>
+			</div>
+				<div class="icon-description">Ibiza Radio</div>
+		</div> -->
+		<div id="pandora-icon-box" class="icon-box" style="text-align:center;">    
+		<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+			<img id="pandora" src="../settings/icons/pandora.png" class="icon" onclick="load_page(this.id,'http://www.pandora.com/',0,'Pandora','pandora');" />
+			<div class="icon pandora-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+			<div class="remove_app" onClick="remove_app('pandora-icon-box','10');"></div>
+		</div>
+		<div class="icon-description">Pandora</div>
+	</div>    
+		<!-- <div id="slacker-icon-box" class="icon-box" style="text-align:center;">    
+		<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+			<img id="slacker" src="../settings/android/slacker.jpg" class="icon" onclick="load_page(this.id,'http://www.slacker.com/',0,'Slacker','slacker');" />
+			<div class="icon slacker-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+			<div class="remove_app" onClick="remove_app('slacker-icon-box','8');"></div>
+		</div>
+		<div class="icon-description">Slacker</div>
+	</div>    -->
+		<div id="soundcloud-icon-box" class="icon-box" style="text-align:center;">    
+		<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+			<img id="soundcloud" src="../settings/icons/soundcloud.jpg" class="icon" onclick="load_page(this.id,'http://www.soundcloud.com/',0,'Soundcloud','soundcloud');" />
+			<div class="icon soundcloud-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+			<div class="remove_app" onClick="remove_app('soundcloud-icon-box','9');"></div>
+		</div>
+		<div class="icon-description">Soundcloud</div>
+	</div>    
+		<div id="spotify-icon-box" class="icon-box" style="text-align:center;">    
+		<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+			<img id="spotify" src="../settings/icons/spotify.png" class="icon" onclick="load_page(this.id,'https://play.spotify.com/',0,'Spotify','spotify');" />
+			<div class="icon spotify-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+			<div class="remove_app" onClick="remove_app('spotify-icon-box','11');"></div>
+		</div>
+		<div class="icon-description">Spotify</div>
+	</div>            
+                            </div>
+                            <div class="swiper-slide">
+                                       <div style="height:1vh;"></div>
+    
+		<!-- <div id="crackle-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="crackle" src="../settings/android/crackle.jpg" class="icon" onclick="load_page(this.id,'http://www.crackle.com/',0,'Crackle','crackle');" />
+				<div class="icon crackle-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('crackle-icon-box','20');"></div>
+			</div>
+			<div class="icon-description">Crackle</div>
+		</div>    -->
+	    
+		<div id="crunchyroll-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="crunchyroll" src="../settings/icons/crunchy.jpg" class="icon" onclick="load_page(this.id,'http://m.crunchyroll.com/',0,'Crunchyroll','crunchyroll');" />
+				<div class="icon crunchyroll-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('crunchyroll-icon-box','68');"></div>
+			</div>
+			<div class="icon-description">Crunchyroll</div>
+		</div>    
+	    
+		<div id="hulu-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="hulu" src="../settings/icons/hulu.png" class="icon" onclick="load_page(this.id,'http://www.hulu.com/',0,'Hulu','hulu');" />
+				<div class="icon hulu-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('hulu-icon-box','19');"></div>
+			</div>
+			<div class="icon-description">Hulu</div>
+		</div>    
+	    
+		<div id="netflix-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="netflix" src="../settings/icons/netflix.jpg" class="icon" onclick="load_page(this.id,'https://www.netflix.com/',2,'Netflix','netflix');" />
+				<div class="icon netflix-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('netflix-icon-box','14');"></div>
+			</div>
+			<div class="icon-description">Netflix</div>
+		</div>    
+	    
+		<!-- <div id="ustvnow-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="ustvnow" src="../settings/android/ustvnow.jpg" class="icon" onclick="load_page(this.id,'http://m.ustvnow.com/iphone',0,'USTVnow','ustvnow');" />
+				<div class="icon ustvnow-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('ustvnow-icon-box','18');"></div>
+			</div>
+			<div class="icon-description">USTVnow</div>
+		</div>
+	    
+		<div id="vimeo-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="vimeo" src="../settings/android/vimeo.jpg" class="icon" onclick="load_page(this.id,'https://vimeo.com/',0,'Vimeo','vimeo');" />
+				<div class="icon vimeo-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('vimeo-icon-box','15');"></div>
+			</div>
+			<div class="icon-description">Vimeo</div>
+		</div>    
+	    
+		<div id="vine-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="vine" src="../settings/android/vine.jpg" class="icon" onclick="load_page(this.id,'https://vine.co/',0,'Vine','vine');" />
+				<div class="icon vine-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('vine-icon-box','16');"></div>
+			</div>
+			<div class="icon-description">Vine</div>
+		</div>    
+	    
+		<div id="wshh-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="wshh" src="../settings/android/wshh.jpg" class="icon" onclick="load_page(this.id,'http://m.worldstarhiphop.com/',0,'World Star','wshh');" />
+				<div class="icon wshh-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('wshh-icon-box','65');"></div>
+			</div>
+			<div class="icon-description">World Star</div>
+		</div>    -->
+	    
+		<div id="youtube-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="youtube" src="../settings/icons/youtube.png" class="icon" onclick="load_page(this.id,'http://m.youtube.com/',0,'Youtube','youtube');" />
+				<div class="icon youtube-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('youtube-icon-box','13');"></div>
+			</div>
+			<div class="icon-description">Youtube</div>
+		</div>                
+                            </div>
+                            <div class="swiper-slide">
+                                                                <div style="height:1vh;"></div>
+
+		<div id="gmail-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="gmail" src="../settings/icons/gmail.png" class="icon" onclick="load_page(this.id,'https://mail.google.com/',0,'Gmail','gmail');" />
+				<div class="icon gmail-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('gmail-icon-box','23');"></div>
+			</div>
+			<div class="icon-description">Gmail</div>
+		</div>    
+	    
+		<div id="zoho-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="zoho" src="../settings/icons/zoho.png" class="icon" onclick="load_page(this.id,'https://www.zoho.com/mail/',0,'Zoho','zoho');" />
+				<div class="icon zoho-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('zoho-icon-box','26');"></div>
+			</div>
+			<div class="icon-description">Zoho</div>
+		</div>
+	    
+		<div id="outlook-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="outlook" src="../settings/icons/outlook.png" class="icon" onclick="load_page(this.id,'https://www.outlook.com/',0,'Outlook','outlook');" />
+				<div class="icon outlook-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('outlook-icon-box','21');"></div>
+			</div>
+			<div class="icon-description">Outlook</div>
+		</div>    
+	    
+		<div id="mailcom-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="mailcom" src="../settings/icons/mailcom.png" class="icon" onclick="load_page(this.id,'http://mail.com/',0,'mail.com','mailcom');" />
+				<div class="icon mailcom-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('mailcom-icon-box','27');"></div>
+			</div>
+			<div class="icon-description">mail.com</div>
+		</div>
+
+		<div id="aol-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="aol" src="../settings/icons/aol.png" class="icon" onclick="load_page(this.id,'https://mail.aol.com/',0,'Aol','aol');" />
+				<div class="icon aol-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('aol-icon-box','27');"></div>
+			</div>
+			<div class="icon-description">Aol</div>
+		</div>
+
+		<div id="icloudmail-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="icloudmail" src="../settings/icons/icloud.png" class="icon" onclick="load_page(this.id,'https://www.icloud.com/#mail',0,'iCloudMail','icloudmail');" />
+				<div class="icon icloudmail-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('icloudmail-icon-box','27');"></div>
+			</div>
+			<div class="icon-description">iCloud Mail</div>
+		</div>
+
+		<!-- <div id="mailcom-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="mailcom" src="../settings/android/mailcom.png" class="icon" onclick="load_page(this.id,'http://mail.com/',0,'mail.com','mailcom');" />
+				<div class="icon mailcom-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('mailcom-icon-box','27');"></div>
+			</div>
+			<div class="icon-description">mail.com</div>
+		</div> -->
+	    
+		<div id="skype-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="skype" src="../settings/icons/skype.jpg" class="icon" onclick="load_page(this.id,'https://web.skype.com/',0,'Skype','skype');" />
+				<div class="icon skype-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('skype-icon-box','25');"></div>
+			</div>
+			<div class="icon-description">Skype</div>
+		</div>    
+	    
+		<div id="yahoo_mail-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="yahoo_mail" src="../settings/icons/yahoo_mail.jpg" class="icon" onclick="load_page(this.id,'https://login.yahoo.com/',0,'YahooMail','yahoo_mail');" />
+				<div class="icon yahoo_mail-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('yahoo_mail-icon-box','24');"></div>
+			</div>
+			<div class="icon-description">Yahoo</div>
+		</div>    
+	            
+            
+                            </div>	            
+                            <div class="swiper-slide">
+                                
+                                <div style="height:1vh;"></div>
+    
+		<div id="facebook-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="facebook" src="../settings/icons/facebook.png" class="icon" onclick="load_page(this.id,'https://m.facebook.com/',0,'Facebook','facebook');" />
+				<div class="icon facebook-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('facebook-icon-box','29');"></div>
+			</div>
+			<div class="icon-description">Facebook</div>
+		</div>    
+	    
+		<!-- <div id="flickr-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="flickr" src="../settings/android/flickr.jpg" class="icon" onclick="load_page(this.id,'https://flickr.com/',0,'Flickr','flickr');" />
+				<div class="icon flickr-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('flickr-icon-box','35');"></div>
+			</div>
+			<div class="icon-description">Flickr</div>
+		</div>    
+	    
+		<div id="google_plus-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="google_plus" src="../settings/android/google_plus.jpg" class="icon" onclick="load_page(this.id,'https://plus.google.com/',0,'Google+','google_plus');" />
+				<div class="icon google_plus-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('google_plus-icon-box','85');"></div>
+			</div>
+			<div class="icon-description">Google+</div>
+		</div>    -->
+	    
+		<div id="imgur-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="imgur" src="../settings/icons/imgur.jpg" class="icon" onclick="load_page(this.id,'http://imgur.com/',0,'imgur','imgur');" />
+				<div class="icon imgur-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('imgur-icon-box','99');"></div>
+			</div>
+			<div class="icon-description">imgur</div>
+		</div>    
+	    
+		<div id="instagram-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="instagram" src="../settings/icons/instagram.jpg" class="icon" onclick="load_page(this.id,'https://www.instagram.com/',0,'Instagram','instagram');" />
+				<div class="icon instagram-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('instagram-icon-box','32');"></div>
+			</div>
+			<div class="icon-description">Instagram</div>
+		</div>    
+	    
+		<div id="linkedin-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="linkedin" src="../settings/icons/linkedin.png" class="icon" onclick="load_page(this.id,'https://www.linkedin.com/',0,'LinkedIn','linkedin');" />
+				<div class="icon linkedin-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('linkedin-icon-box','31');"></div>
+			</div>
+			<div class="icon-description">LinkedIn</div>
+		</div>
+	    
+		<div id="messenger-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="messenger" src="../settings/icons/messenger.jpg" class="icon" onclick="load_page(this.id,'https://www.messenger.com/login',2,'Messenger','messenger');" />
+				<div class="icon messenger-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('messenger-icon-box','30');"></div>
+			</div>
+			<div class="icon-description">Messenger</div>
+		</div>    
+	    
+		<div id="pinterest-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="pinterest" src="../settings/icons/pinterest.jpg" class="icon" onclick="load_page(this.id,'https://www.pinterest.com/',0,'Pinterest','pinterest');" />
+				<div class="icon pinterest-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('pinterest-icon-box','33');"></div>
+			</div>
+			<div class="icon-description">Pinterest</div>
+		</div>    
+	    
+		<div id="reddit-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="reddit" src="../settings/icons/reddit.jpg" class="icon" onclick="load_page(this.id,'https://www.reddit.com/',0,'Reddit','reddit');" />
+				<div class="icon reddit-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('reddit-icon-box','98');"></div>
+			</div>
+			<div class="icon-description">Reddit</div>
+		</div>    
+	    
+		<div id="tumblr-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="tumblr" src="../settings/icons/tumblr.png" class="icon" onclick="load_page(this.id,'https://www.tumblr.com/',0,'Tumblr','tumblr');" />
+				<div class="icon tumblr-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('tumblr-icon-box','34');"></div>
+			</div>
+			<div class="icon-description">Tumblr</div>
+		</div>    
+	    
+		<div id="twitch-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="twitch" src="../settings/icons/twitch.jpg" class="icon" onclick="load_page(this.id,'https://www.twitch.tv/',0,'Twitch','twitch');" />
+				<div class="icon twitch-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('twitch-icon-box','17');"></div>
+			</div>
+			<div class="icon-description">Twitch</div>
+		</div>    
+	    
+		<div id="twitter-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="twitter" src="../settings/icons/twitter.jpg" class="icon" onclick="load_page(this.id,'https://mobile.twitter.com/',0,'Twitter','twitter');" />
+				<div class="icon twitter-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('twitter-icon-box','28');"></div>
+			</div>
+			<div class="icon-description">Twitter</div>
+		</div>                            
+                            </div>
+                            <div class="swiper-slide">
+                                  <div style="height:1vh;"></div>
+    
+		<div id="cbs_news-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="cbs_news" src="../settings/icons/cbs.png" class="icon" onclick="load_page(this.id,'http://www.cbsnews.com/mobile/',0,'CBS News','cbs_news');" />
+				<div class="icon cbs_news-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('cbs_news-icon-box','83');"></div>
+			</div>
+			<div class="icon-description">CBS News</div>
+		</div>    
+	    
+		<div id="cnn_news-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="cnn_news" src="../settings/icons/cnn.jpg" class="icon" onclick="load_page(this.id,'http://m.cnn.com/',0,'CNN News','cnn_news');" />
+				<div class="icon cnn_news-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('cnn_news-icon-box','38');"></div>
+			</div>
+			<div class="icon-description">CNN News</div>
+		</div>    
+	    
+		<div id="ign-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="ign" src="../settings/icons/ign.png" class="icon" onclick="load_page(this.id,'http://m.ign.com/',0,'IGN','ign');" />
+				<div class="icon ign-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('ign-icon-box','42');"></div>
+			</div>
+			<div class="icon-description">IGN</div>
+		</div>    
+	    
+		<div id="imdb-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="imdb" src="../settings/icons/imdb.jpg" class="icon" onclick="load_page(this.id,'http://www.imdb.com/',0,'IMDb','imdb');" />
+				<div class="icon imdb-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('imdb-icon-box','41');"></div>
+			</div>
+			<div class="icon-description">IMDb</div>
+		</div>    
+	    
+		<div id="natgeo-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="natgeo" src="../settings/icons/natgeo.jpg" class="icon" onclick="load_page(this.id,'http://www.nationalgeographic.com/',0,'NatGeo','natgeo');" />
+				<div class="icon natgeo-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('natgeo-icon-box','94');"></div>
+			</div>
+			<div class="icon-description">NatGeo</div>
+		</div>    
+	    
+		<div id="nbc_news-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="nbc_news" src="../settings/icons/nbc.jpg" class="icon" onclick="load_page(this.id,'http://www.nbcnews.com/',0,'NBC News','nbc_news');" />
+				<div class="icon nbc_news-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('nbc_news-icon-box','55');"></div>
+			</div>
+			<div class="icon-description">NBC News</div>
+		</div>    
+	    
+		<div id="nyt_news-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="nyt_news" src="../settings/icons/nytimes.jpg" class="icon" onclick="load_page(this.id,'http://mobile.nytimes.com/',0,'NY Times','nyt_news');" />
+				<div class="icon nyt_news-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('nyt_news-icon-box','39');"></div>
+			</div>
+			<div class="icon-description">NY Times</div>
+		</div>    
+	    
+		<div id="ted_talks-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="ted_talks" src="../settings/icons/ted_talks.jpg" class="icon" onclick="load_page(this.id,'http://www.ted.com/',0,'TED Talks','ted_talks');" />
+				<div class="icon ted_talks-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('ted_talks-icon-box','37');"></div>
+			</div>
+			<div class="icon-description">TED Talks</div>
+		</div>    
+	    
+		<div id="time-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="time" src="../settings/icons/time.jpg" class="icon" onclick="load_page(this.id,'http://www.time.com/',0,'Time','time');" />
+				<div class="icon time-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('time-icon-box','93');"></div>
+			</div>
+			<div class="icon-description">Time</div>
+		</div>    
+	    
+		<div id="tv_guide-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="tv_guide" src="../settings/icons/tvguide.png" class="icon" onclick="load_page(this.id,'http://www.tvguide.com/',0,'TV Guide','tv_guide');" />
+				<div class="icon tv_guide-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('tv_guide-icon-box','72');"></div>
+			</div>
+			<div class="icon-description">TV Guide</div>
+		</div>    
+	    
+		<div id="wikipedia-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="wikipedia" src="../settings/icons/wikipedia.png" class="icon" onclick="load_page(this.id,'http://en.m.wikipedia.org/',0,'Wikipedia','wikipedia');" />
+				<div class="icon wikipedia-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('wikipedia-icon-box','40');"></div>
+			</div>
+			<div class="icon-description">Wikipedia</div>
+		</div>    
+	    
+		<div id="yahoo_news-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="yahoo_news" src="../settings/icons/yahoo_news.jpg" class="icon" onclick="load_page(this.id,'http://news.yahoo.com/',0,'Yahoo News','yahoo_news');" />
+				<div class="icon yahoo_news-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('yahoo_news-icon-box','64');"></div>
+			</div>
+			<div class="icon-description">Yahoo News</div>
+		</div>                            
+                            </div>
+	                        <div class="swiper-slide">
+                                 <div style="height:1vh;"></div>
+    
+		<div id="espn-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="espn" src="../settings/icons/espn.png" class="icon" onclick="load_page(this.id,'http://espn.go.com/',0,'ESPN','espn');" />
+				<div class="icon espn-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('espn-icon-box','56');"></div>
+			</div>
+			<div class="icon-description">ESPN</div>
+		</div>    
+	    
+		<div id="fifa-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="fifa" src="../settings/icons/fifa.jpg" class="icon" onclick="load_page(this.id,'https://www.fifa.com/',0,'FIFA','fifa');" />
+				<div class="icon fifa-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('fifa-icon-box','96');"></div>
+			</div>
+			<div class="icon-description">FIFA</div>
+		</div>    
+	    
+		<div id="fox_sports-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="fox_sports" src="../settings/icons/foxsports.jpg" class="icon" onclick="load_page(this.id,'http://www.foxsports.com/',0,'FOX Sports','fox_sports');" />
+				<div class="icon fox_sports-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('fox_sports-icon-box','66');"></div>
+			</div>
+			<div class="icon-description">FOX Sports</div>
+		</div>    
+	    
+		<div id="mlb-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="mlb" src="../settings/icons/mlb.png" class="icon" onclick="load_page(this.id,'http://www.mlb.mlb.com/',0,'MLB','mlb');" />
+				<div class="icon mlb-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('mlb-icon-box','90');"></div>
+			</div>
+			<div class="icon-description">MLB</div>
+		</div>    
+	    
+		<div id="nascar-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="nascar" src="../settings/icons/nascar.jpg" class="icon" onclick="load_page(this.id,'http://www.nascar.com/',0,'NASCAR','nascar');" />
+				<div class="icon nascar-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('nascar-icon-box','97');"></div>
+			</div>
+			<div class="icon-description">NASCAR</div>
+		</div>    
+	    
+		<div id="nba-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="nba" src="../settings/icons/nba.jpg" class="icon" onclick="load_page(this.id,'http://www.nba.com/',0,'NBA','nba');" />
+				<div class="icon nba-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('nba-icon-box','88');"></div>
+			</div>
+			<div class="icon-description">NBA</div>
+		</div>    
+	    
+		<div id="nhl-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="nhl" src="../settings/icons/nhl.jpg" class="icon" onclick="load_page(this.id,'https://www.nhl.com/',0,'NHL','nhl');" />
+				<div class="icon nhl-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('nhl-icon-box','89');"></div>
+			</div>
+			<div class="icon-description">NHL</div>
+		</div>    
+	    
+		<div id="pga-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="pga" src="../settings/icons/pga.jpg" class="icon" onclick="load_page(this.id,'http://www.pga.com/',0,'PGA','pga');" />
+				<div class="icon pga-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('pga-icon-box','92');"></div>
+			</div>
+			<div class="icon-description">PGA</div>
+		</div>    
+	    
+		<div id="ufc-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="ufc" src="../settings/icons/ufc.jpg" class="icon" onclick="load_page(this.id,'http://www.ufc.com/',0,'UFC','ufc');" />
+				<div class="icon ufc-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('ufc-icon-box','95');"></div>
+			</div>
+			<div class="icon-description">UFC</div>
+		</div>    
+	    
+		<div id="wwe-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="wwe" src="../settings/icons/wwe.jpg" class="icon" onclick="load_page(this.id,'http://www.wwe.com/',0,'WWE','wwe');" />
+				<div class="icon wwe-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('wwe-icon-box','91');"></div>
+			</div>
+			<div class="icon-description">WWE</div>
+		</div>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <div style="height:1vh;"></div>
+    
+		<div id="amazon-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="amazon" src="../settings/icons/amazon.jpg" class="icon" onclick="load_page(this.id,'https://www.amazon.com/',0,'Amazon','amazon');" />
+				<div class="icon amazon-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('amazon-icon-box','44');"></div>
+			</div>
+			<div class="icon-description">Amazon</div>
+		</div>    
+	    
+		<div id="craigslist-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="craigslist" src="../settings/icons/craigslist.jpg" class="icon" onclick="load_page(this.id,'http://www.craigslist.com/',0,'Craigslist','craigslist');" />
+				<div class="icon craigslist-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('craigslist-icon-box','69');"></div>
+			</div>
+			<div class="icon-description">Craigslist</div>
+		</div>    
+	    
+		<div id="ebay-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="ebay" src="../settings/icons/ebay.jpg" class="icon" onclick="load_page(this.id,'http://www.ebay.com/',0,'eBay','ebay');" />
+				<div class="icon ebay-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('ebay-icon-box','43');"></div>
+			</div>
+			<div class="icon-description">eBay</div>
+		</div>    
+	    
+		<div id="etsy-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="etsy" src="../settings/icons/etsy.jpg" class="icon" onclick="load_page(this.id,'https://www.etsy.com/',0,'Etsy','etsy');" />
+				<div class="icon etsy-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('etsy-icon-box','45');"></div>
+			</div>
+			<div class="icon-description">Etsy</div>
+		</div>    
+	    
+		<div id="alibaba-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="alibaba" src="../settings/icons/alibaba.png" class="icon" onclick="load_page(this.id,'https://www.alibaba.com/',0,'Alibaba','alibaba');" />
+				<div class="icon alibaba-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('alibaba-icon-box','87');"></div>
+			</div>
+			<div class="icon-description">Alibaba</div>
+		</div>
+	    
+		<div id="paypal-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="paypal" src="../settings/icons/paypal.jpg" class="icon" onclick="load_page(this.id,'https://www.paypal.com/',0,'Paypal','paypal');" />
+				<div class="icon paypal-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('paypal-icon-box','86');"></div>
+			</div>
+			<div class="icon-description">Paypal</div>
+		</div>    
+	    
+		<div id="aliexpress-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="aliexpress" src="../settings/icons/aliexpress.png" class="icon" onclick="load_page(this.id,'https://squareup.com/',0,'AliExpress','aliexpress');" />
+				<div class="icon aliexpress-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('aliexpress-icon-box','70');"></div>
+			</div>
+			<div class="icon-description">AliExpress</div>
+		</div>                  
+                            </div>
+                            <div class="swiper-slide">
+                                <div style="height:1vh;"></div>
+    
+		<div id="2048-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="2048" src="../extra/settings/icons/2048.png" class="icon" onclick="load_page(this.id,'http://m.silvergames.com/game/2048/',0,'2048','2048');" />
+				<div class="icon 2048-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('2048-icon-box','80');"></div>
+			</div>
+			<div class="icon-description">2048</div>
+		</div>    
+	    
+		<div id="bad_donut-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="bad_donut" src="../extra/settings/icons/bad_donut.png" class="icon" onclick="load_page(this.id,'http://m.silvergames.com/game/bad-donut/',0,'Bad Donut','bad_donut');" />
+				<div class="icon bad_donut-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('bad_donut-icon-box','52');"></div>
+			</div>
+			<div class="icon-description">Bad Donut</div>
+		</div>    
+	    
+		<div id="candyland2-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="candyland2" src="../extra/settings/icons/candyland2.jpg" class="icon" onclick="load_page(this.id,'http://m.silvergames.com/game/back-to-candyland-2/',0,'Candyland 2','candyland2');" />
+				<div class="icon candyland2-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('candyland2-icon-box','50');"></div>
+			</div>
+			<div class="icon-description">Candyland 2</div>
+		</div>    
+	    
+		<div id="flappy_bird-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="flappy_bird" src="../extra/settings/icons/flappy_bird.png" class="icon" onclick="load_page(this.id,'http://m.silvergames.com/game/flappy-bird/',0,'Flappy Bird','flappy_bird');" />
+				<div class="icon flappy_bird-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('flappy_bird-icon-box','47');"></div>
+			</div>
+			<div class="icon-description">Flappy Bird</div>
+		</div>    
+	    
+		<div id="icecream_please-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="icecream_please" src="../extra/settings/icons/icecream_please.jpg" class="icon" onclick="load_page(this.id,'http://m.silvergames.com/game/ice-cream-please/',0,'IceCreamPlease','icecream_please');" />
+				<div class="icon icecream_please-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('icecream_please-icon-box','54');"></div>
+			</div>
+			<div class="icon-description">ICP</div>
+		</div>     
+	    
+		<div id="jackbox-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="jackbox" src="../settings/icons/jackbox.png" class="icon" onclick="load_page(this.id,'http://www.jackbox.tv/',0,'Jackbox','jackbox');" />
+				<div class="icon jackbox-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('jackbox-icon-box','73');"></div>
+			</div>
+			<div class="icon-description">Jackbox</div>
+		</div>    
+	    
+		<div id="katana_fruits-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="katana_fruits" src="../extra/settings/icons/katana_fruits.jpg" class="icon" onclick="load_page(this.id,'http://m.silvergames.com/game/katana-fruits/',0,'Katana Fruits','katana_fruits');" />
+				<div class="icon katana_fruits-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('katana_fruits-icon-box','48');"></div>
+			</div>
+			<div class="icon-description">Katana Fruits</div>
+		</div>    
+	    
+		<div id="mini_race_rush-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="mini_race_rush" src="../extra/settings/icons/mini_race_rush.jpg" class="icon" onclick="load_page(this.id,'http://m.silvergames.com/game/mini-race-rush/',0,'MiniRaceRush','mini_race_rush');" />
+				<div class="icon mini_race_rush-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('mini_race_rush-icon-box','53');"></div>
+			</div>
+			<div class="icon-description">MRR</div>
+		</div>    
+	    
+		<div id="slither-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="slither" src="../extra/settings/icons/slither.jpg" class="icon" onclick="load_page(this.id,'http://slither.io/',0,'Slither','slither');" />
+				<div class="icon slither-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('slither-icon-box','77');"></div>
+			</div>
+			<div class="icon-description">Slither.io</div>
+		</div>    
+	    
+		<div id="space_cord-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="space_cord" src="../extra/settings/icons/space_cord.jpg" class="icon" onclick="load_page(this.id,'http://m.silvergames.com/game/space-cord/',0,'Space Cord','space_cord');" />
+				<div class="icon space_cord-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('space_cord-icon-box','49');"></div>
+			</div>
+			<div class="icon-description">Space Cord</div>
+		</div>    
+	    
+	    
+		<div id="zombie_getaway-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="zombie_getaway" src="../extra/settings/icons/zombie_getaway.png" class="icon" onclick="load_page(this.id,'http://m.silvergames.com/game/zombie-getaway/',0,'ZombieGetaway','zombie_getaway');" />
+				<div class="icon zombie_getaway-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('zombie_getaway-icon-box','51');"></div>
+			</div>
+			<div class="icon-description">Zombie G.</div>
+		</div> 
+				<div id="archery-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="archery" src="../settings/icons/archery.jpg" class="icon" onclick="load_page(this.id,'http://m.silvergames.com/game/archery-world-cup/',0,'Archery World','archery');" />
+				<div class="icon archery-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('archery-icon-box','51');"></div>
+			</div>
+			<div class="icon-description">Archery World</div>
+		</div> 
+		      
+<div id="running_jack-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="running_jack" src="../extra/settings/icons/running_jack.jpg" class="icon" onclick="load_page(this.id,'http://play.famobi.com/running-jack',0,'RunningJack','running_jack');" />				<div class="icon running_jack-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('running_jack-icon-box','98');"></div>
+			</div>
+			<div class="icon-description">RJ</div>
+		</div> 
+                            </div>
+                        </div>
+                        <div class="swiper-pagination theme-white" style="bottom:0;"></div>
+                    </div>
+				</div>  
+                
+                
+                
+                
+                    
+                <div id="footer" style="position:fixed; bottom:-1000px; height:auto; width:100%; overflow:hidden; -webkit-transform: translate3d(0, 0, 0);">
+                
+                
+                    <div class="footer_background" style="position:absolute; top:0; right:0; bottom:0; left:0; z-index:99; width:100%; height:100%; -webkit-filter: blur(10px); overflow:hidden;"></div>
+                    
+                    <div style="position:relative; z-index: 100; background-color:rgba(34,34,34,0.6);">
+
+    <div id="gmail-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="gmail" src="../settings/icons/gmail.png" class="icon" onclick="load_page(this.id,'https://mail.google.com/',0,'Gmail','gmail');" />
+				<div class="icon gmail-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('gmail-icon-box','23');"></div>
+			</div>
+			<div class="icon-description">Gmail</div>
+		</div> 
+   <!-- <div id="messages-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="twitter" src="../settings/icons/messages.png" class="icon" onclick="load_page(this.id,'https://mobile.twitter.com/',0,'Messages','messages');" />
+				<div class="icon twitter-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('messages-icon-box','28');"></div>
+			</div>
+			<div class="icon-description">Messages</div>
+		</div> -->
+        <div id="safari-icon-box" class="icon-box-footer">
+       		 <div style="position:relative; width:100%; height:auto; overflow:visible; margin:auto;">
+           		<div class="icon safari-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+            	<img id="safari" src="../settings/android/safari.png" class="icon" onclick="load_page(this.id,'https://www.google.com/',0,'Safari','safari');" alt="Safari"/>
+           		 <p style="margin:0;" class="icon-description">Browser</p>
+        	</div>
+   		 </div>
+    <div id="app_store-icon-box" class="icon-box-footer" style="text-align:center;">
+   	<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+        <img id="app_store" src="../settings/android/apps.png" class="icon" onclick="window.location.href = 'store.html'" alt="Store" />
+        <div class="icon app_store-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+	</div>
+	<div class="icon-description">Store</div>
+</div>
+		<div id="music-icon-box" class="icon-box" style="text-align:center;">    
+			<div style="width:11.75vh; height:11.75vh; margin:0 auto;">
+				<img id="music" src="../settings/icons/musicplayer.png" class="icon" onclick="load_page(this.id,'https://www.musixhub.com/',0,'Music','music');" />
+				<div class="icon music-icon-select" style="position:absolute; top:0; left:0; right:0; margin-left:auto; margin-right:auto; background-color:#000; opacity:0; pointer-events: none;"></div>
+				<div class="remove_app" onClick="remove_app('music-icon-box','32');"></div>
+			</div>
+			<div class="icon-description">Music</div>
+		</div>                           
+    </div>
+                
+                </div>                
+                
+                
+                
+                
+                
+                
+			</div>
+		</div>
+	</div>
+</div>
+
+    <div id="ad_footer">
+
+    </div>
+
+<div id="hold_timer"></div>
+
+
+
+<script>
+//var remove_app_mode = 0;
+//var removed_apps = [];
+
+//removed_apps_array = '';
+
+//removed_apps = removed_apps_array.split(",");
+var app_color;
+
+
+var swiper = new Swiper('.swiper-container', {
+	initialSlide: 0,
+	pagination: '.swiper-pagination',
+	preloadImages: false,
+    // Enable lazy loading
+    lazyLoading: false
+	//loop: true
+});
+
+
+//$(window).on("load", function() {
+
+$(document).ready(function(e) {
+    
+	
+	// Set a timeout...
+	setTimeout(function(){
+		// Hide the address bar!
+		window.scrollTo(0, 1);
+	}, 0);
+	
+	
+	$("#background").css({
+		opacity: 0.6,
+		transition: 'all 0.5s'
+	});	
+	$("#footer").css({
+		bottom: (0 - $("#footer").height())
+	});
+	
+	
+	
+			
+		$("#home-page").height( $(document).height() - ( $("#footer").height() + $("#ad_footer").height() + 0 ) );
+
+			
+			
+
+			
+			
+			
+			
+	$("#home-page").css({
+		'-webkit-transform' : 'scale(5)',
+		'-moz-transform'    : 'scale(5)',
+		'-ms-transform'     : 'scale(5)',
+		'-o-transform'      : 'scale(5)',
+		'transform'         : 'scale(5)',
+		opacity:0
+	});
+	setTimeout( function() {
+		$("#home-page").css({
+			'-webkit-transform' : 'scale(1)',
+			'-moz-transform'    : 'scale(1)',
+			'-ms-transform'     : 'scale(1)',
+			'-o-transform'      : 'scale(1)',
+			'transform'         : 'scale(1)',
+			transition:"all 0.5s ease-out",
+			opacity:1
+		});
+	}, 0);
+	
+	
+	setTimeout( function() {
+		$("#footer").css({
+			bottom: $("#ad_footer").height(),
+			transition: 'all 0.75s'
+		});
+	}, 100);
+
+
+		
+});
+
+
+function load_page(id, url, app_mode, app_title, app_name, app_color_override) { 
+
+	//var pos = $("#"+id).parents().eq(2).position(); // returns an object with the attribute top and left
+	var pos = $("#" + app_name + "-icon-box").position(); // returns an object with the attribute top and left
+
+	pos.top;  // top offset position
+	pos.left; // left offset position
+
+	console.log(pos.top + '/' + pos.left)	
+
+
+	$("#loader").css('height', 0);
+	$("#loader").css('width', 0);
+	$("#loader").css('opacity', 0);
+
+	$("#loader").css('left', (pos.left +70) );
+	$("#loader").css('top', (pos.top + 70) );
+
+	$("#loader").css({
+		"background-image": "url('http://inuclearapp.org/" + id + ".jpg')",
+		"background-repeat": "no-repeat",
+		//"background-size": ($(window).height() * 0.20),
+		"background-position": "center",
+		//"background-image", "url('icons/" + id + ".png')",
+		//"background-repeat", "no-repeat"
+		"background-size": "cover"
+
+	})
+
+
+	$("#loader").css({
+		width: $(document).width(),
+		height: $(document).height(),
+		top: '0px',
+		left: '0px',
+		opacity: 1,
+		transition: 'all 0.5s'		
+	});
+
+	setTimeout( function() {
+		$("#home-page").hide();
+		$("#background").hide(function() {
+
+			if (app_mode == 0) {
+				window.location.href = url;
+			} else if (app_mode > 0) {
+				window.location.href = "../apps/app/app.html" + "?title=" + app_title + "&url=" +url + "&app_mode=" + app_mode + "&app_color=" + app_color + "&app_name=" + app_name;
+			}
+		});
+	}, 1000);
+
+};
+
+
+
+
+
+
+
+
+
+if ((/iphone|ipod|ipad.*os 5/gi).test(navigator.appVersion)) {
+	window.onpageshow = function(evt) {
+		if (evt.persisted) {
+			document.body.style.display = "none";
+			location.reload();
+		}
+	};
+}
+
+var xStart, yStart = 0; 
+document.addEventListener('touchstart',function(e) {
+    xStart = e.touches[0].screenX;
+    yStart = e.touches[0].screenY;
+});
+document.addEventListener('touchmove',function(e) {
+    var xMovement = Math.abs(e.touches[0].screenX - xStart);
+    var yMovement = Math.abs(e.touches[0].screenY - yStart);
+
+	if((yMovement * 3) > xMovement) {
+		e.preventDefault();
+	}
+});
+
+
+
+
+
+
+</script>
+
+<script type="text/javascript" src="../settings/js/inobounce.js"></script>
+
+</body>
+</html>

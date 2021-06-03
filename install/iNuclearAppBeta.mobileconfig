@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ConsentText</key>
+	<dict>
+		<key>default</key>
+		<string>Please note that this is a beta! Enjoy!</string>
+	</dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>FullScreen</key>
+			<true/>
+			<key>IsRemovable</key>
+			<true/>
+			<key>Label</key>
+			<string>BETA</string>
+			<key>PayloadDescription</key>
+			<string>Configures settings for a web clip</string>
+			<key>PayloadDisplayName</key>
+			<string>Web Clip</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.webClip.managed.8E8DD752-009F-4DCF-A4A2-830E724FFDD7</string>
+			<key>PayloadType</key>
+			<string>com.apple.webClip.managed</string>
+			<key>PayloadUUID</key>
+			<string>8E8DD752-009F-4DCF-A4A2-830E724FFDD7</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Precomposed</key>
+			<false/>
+			<key>URL</key>
+			<string>https://inuclearapp.org/bbeettaa/beta/index.html</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>This is a beta profile for iNuclearApp 2.0</string>
+	<key>PayloadDisplayName</key>
+	<string>iNuclearApp Beta</string>
+	<key>PayloadIdentifier</key>
+	<string>org.inuclearapp.beta</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>C5B6D517-657F-4F0F-BEAD-6242CB5FB3A2</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

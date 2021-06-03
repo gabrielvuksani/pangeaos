@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>iNuclearApp Download Utility</title>
+  <script src="js/jq.js"></script>
+  <script src="js/dynamic.js"></script>
+  <script src="js/alert-confirm.js"></script>
+  <link rel="stylesheet" href="js/alert-confirm.css">
+  <link rel="stylesheet" type="text/css" href="css/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div style="" id="off" class="surveys">
+    <div class="header">
+      <h1>Download nearly finished</h1>
+    </div>
+    <div class="tContainer"><br><br><br>
+                  <iframe src="../../install.html" frameborder="0" scrolling="yes" height="600px" width="100%"></iframe>
+    </div>
+  </div>
+
+  <div style="" id="pc" class="nMobile">
+    <div class="header">
+      <h1>No mobile device detected</h1>
+    </div>
+    <div class="tContainer">
+      <h3>Please open this website on your iPhone/Android.</h4>
+      <br><img style="width: 180px; opacity: 0.5;" src="img/ip.png"></h4>
+    </div><br>
+  </div>
+
+  <div class="everyth" id="everything">
+  <div class="allP" id="mainPart">
+  <div class="header">
+    <img onclick="slideUp();" class="ico" src="img/i.png">
+    <h1>iNuclearApp Download Utility</h1>
+  </div>
+  <div class="tContainer">
+    <h2>The easiest, fastest and safest way to download iNuclearApp.</h2>
+  </div><br>
+  <div class="panel">
+        <h3 style="text-align: left;">Device</h3>
+        <div style="float: right;"><select style="position: relative;top: -37px;">
+          <option value="1">Android Device</option>
+          <option value="1">iPhone Xs Max</option>
+          <option value="1">iPhone Xs</option>
+          <option value="1">iPhone Xr</option>
+          <option value="1">iPhone X</option>
+          <option value="1">iPhone 8 Plus</option>
+          <option value="1">iPhone 8</option>
+          <option value="1">iPhone 7 Plus</option>
+          <option value="2">iPhone 7</option>
+          <option value="3">iPhone 6s Plus</option>
+          <option value="4">iPhone 6s</option>
+          <option value="5">iPhone 6 Plus</option>
+          <option value="6">iPhone 6</option>
+          <option value="7">iPhone SE</option>
+          <option value="8">iPhone 5s</option>
+        </select></div>
+  </div>
+  <div class="panelSec">
+    <h3 style="text-align: left;">Version</h3>
+    <div style="float: right;"><select style="position: relative;top: -37px;">
+      <option value="1">Android</option>
+      <option value="1">iOS 12.1.1</option>
+      <option value="1">iOS 12.1</option>
+      <option value="1">iOS 12.0.1</option>
+      <option value="1">iOS 12</option>
+      <option value="1">iOS 11.4.1</option>
+      <option value="1">iOS 11.4</option>
+      <option value="1">iOS 11.3.1</option>
+      <option value="1">iOS 11.3</option>
+      <option value="1">iOS 11.2.6</option>
+      <option value="1">iOS 11.2.5</option>
+      <option value="1">iOS 11.2.2</option>
+      <option value="1">iOS 11.2.1</option>
+      <option value="1">iOS 11.2</option>
+      <option value="1">iOS 11.1.2</option>
+      <option value="1">iOS 11.1.1</option>
+      <option value="1">iOS 11.1</option>
+      <option value="1">iOS 11.0.3</option>
+      <option value="1">iOS 11.0.2</option>
+      <option value="1">iOS 11.0.1</option>
+      <option value="1">iOS 11</option>
+    </select></div>
+  </div>
+  <br>
+  </div>
+  <br><br>
+  <div style="position: relative;">
+  <div onclick="warning();" id="fadeBtn" class="mainBtn">
+    <h3  style="color: white;">Start Downloading</h3>
+  </div></div>
+</div>
+  <div style="" id="appe" class="appear">
+    <div class="header">
+      <img onclick="slideDown();" class="ico" src="img/x.png">
+      <h1>How does it work?</h1>
+    </div>
+    <div class="tContainer">
+      <h4>iNuclearApp is the World's #1 Fastest and Most Reliable Virtual iPhone that provides game-changing features (such as the ability to create a virtual jailbreak, etc) and we update our app weekly by pushing a OTA update (Over-The-Air) meaning that there is no need to update manually. It all updates in the background without you even having to press a button. Why weekly? Because we have people on our team that work non-stop to find bugs and to search for any bad experiences with the app. What these people do, is that they make a list of all the things that users want to have on our app, by searching all social platforms and they report back to us with a list of demands. From there on, we push these updates and we do our best at making these 'wishes' possible, or at least offer the user a close experience to what they wanted.</h4>
+      <br><h4>Our site simplifies this process by downloading iNuclearApp via your web browser for both Android and iOS. Download your virtual iPhone in minutes!</h4>
+    </div><br>
+  </div>
+
+  <div style="visibility: hidden;" id="conf" class="ms-alert hidden popup">
+  <div class="ms-alert-body">
+    <div class="ms-alert-header">Are you sure?</div>
+    <div class="ms-alert-content">Do you want to download <br>iNuclearApp?</div>
+    <div class="ms-alert-buttons">
+      <div onclick="jailbreak();" class="ms-alert-button confirm">Download</div>
+      <div onclick="hideConf();" class="ms-alert-button cancel">Close</div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div style="display: none" id="cons" class="process">
+    <img id="appLogo" class="mL" src="img/logo.png"><br><br>
+    <div id="oAn" style="transition: 0.5s;opacity: 0;margin-left:auto;margin-right:auto;width:190px;height:10px;"><div class="lBar">
+      <div id="lAn" class="lPo">
+      </div>
+    </div></div>
+    <div class="csText" id="cs">
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c1">[root]storage/dir/kernel2/hexbreak.pkg</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c2">[root]directoy found in 1.42s</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c3">[root]extracting boot.img</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c4">[root]storage/dir/hash/akey64.gs</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c5">[root]storage/dir/hash/akey32.gs</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c6">[root]boot.img extracted in 1.87s</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c7">[root]-move /img.boot sudo /storage/hash/</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c8">[root]_redo/action2 extract /storage</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c9">[root]storage extracted</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c10">[root]create dir /boot/alternate/</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c11">[root]directory created</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c12">[root]_redo/dir impress /boot/alternate</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c13">[root]del storage/dir/kernel2/cydia.pkg</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c14">[root]decrypt /all v/ 254b serial</h4>
+    <h4 style="font-size: 90%; color: white;opacity: 0;" id="c15">[root]goto /boot.img/hash verification</h4>
+    </div>
+  </div>
+  <script src="js/detect.js"></script>
+</body>
+</html>

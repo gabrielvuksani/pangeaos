@@ -1,0 +1,81 @@
+  
+
+  .appsdiv {
+    display: flex;
+    max-width: 400px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px; 
+    box-shadow: 0 30px 200px 0 rgba(0,0,0,0.05);
+    padding: 40px 0px;
+    background-color: white;
+  
+  }
+  
+  
+  .apps1 {
+    animation: move 6s linear infinite;
+    display: flex;
+  }
+  .apps2 {
+    display: flex;
+    animation: move 6s linear infinite;
+  }
+  
+  
+  .appicon {
+   
+    height: 60px;
+    width: 60px;
+    margin: 0px 10px;
+    border-radius: 15px;
+    background-color: #F6F6F6;
+    background-size: cover;
+  }
+  
+  @keyframes move {
+    from
+    {transform: translateX(0%)}
+    to 
+    {transform: translateX(-100%);}
+  }
+
+  @media only screen and (max-width: 420px) {
+  
+  .appsdiv {
+    display: flex;
+    width: 100vh;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+    border-radius: 0px;
+  
+  }
+  
+  .apps1, .apps2 {
+    display: flex;
+  }
+  
+  .apps1 {
+    animation: move 6s linear infinite;
+  }
+  .apps2 {
+    animation: move 6s linear infinite;
+  }
+  
+  
+  .appicon {
+   
+    height: 60px;
+    width: 60px;
+    margin: 0px 10px;
+    border-radius: 15px;
+    background-color: white;
+  }
+  
+  @keyframes move {
+    from
+    {transform: translateX(-0%)}
+    to 
+    {transform: translateX(-100%);}
+  }}

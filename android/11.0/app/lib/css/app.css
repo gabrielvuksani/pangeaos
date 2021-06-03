@@ -1,0 +1,33 @@
+body{
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.page{
+	background-color: white;
+}
+.toolbar:before{
+	background: #ffffff;
+	height: 0;
+}
+.active{
+	border: none;
+	box-shadow: 0 5px 10px rgba(37, 184, 252, 0.65);
+}
+.icon{
+	border-radius: 25%;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+.toolbar{
+	background-color: rgba(255, 255, 255, 0.90);
+}
+h1{
+	font-size: 2.25rem;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+h2{
+	font-size: 1rem;
+	font-weight: normal;
+	color: #777;
+	margin: 0 !important;
+	padding: 0 !important;
+}

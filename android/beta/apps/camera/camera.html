@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from ihaxdns.com/ihaxdns/apps/camera/camera.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Oct 2017 14:48:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="0"> 
+	<meta name="viewport" content="width=device-width; initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no, minimal-ui">
+    <title>Camera</title>
+    <script type="text/javascript" src="../../../../ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../settings/styles/home.css">
+
+<style>
+
+body, html {
+	position:relative;
+	width:100%;
+	height:100%;
+	margin:0;
+}
+
+div {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;	
+}
+
+#mybutton {
+	position: relative;
+	cursor:   pointer;   
+	height:100%;
+  	width:  100%;
+  	font-weight: bold;
+  	color:#fff;
+  
+}
+
+
+
+input#fileToUpload {
+  height: 100%;
+  width:100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 100px;
+  z-index: 2;
+
+  opacity: 0.0; /* Standard: FF gt 1.5, Opera, Safari */
+  filter: alpha(opacity=0); /* IE lt 8 */
+  -ms-filter: "alpha(opacity=0)"; /* IE 8 */
+  -khtml-opacity: 0.0; /* Safari 1.x */
+  -moz-opacity: 0.0; /* FF lt 1.5, Netscape */
+}
+
+.file-upload { display:none; }
+
+
+</style>
+
+<script type="text/javascript">
+
+var filename = '';
+
+
+
+function fileSelected() {
+	$("#mybutton").hide();	  
+
+	var count = document.getElementById('fileToUpload').files.length;
+	document.getElementById('details').innerHTML = "";
+	for (var index = 0; index < count; index ++)
+	{
+		var file = document.getElementById('fileToUpload').files[index];
+		var fileSize = 0;
+		if (file.size > 1024 * 1024)
+		fileSize = (Math.round(file.size * 100 / (1024 * 1024)) / 100).toString() + 'MB';
+		else
+		fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + 'KB';
+		document.getElementById('details').innerHTML += 'Name: ' + file.name + '<br>Size: ' + fileSize + '<br>Type: ' + file.type;
+		document.getElementById('details').innerHTML += '<p>';
+	}
+}
+
+function uploadFile() {
+
+	$(document).scrollTop($(document).height());
+	$("#mybutton").hide();
+	$("#wait").css({
+		opacity:0.5,
+		transition: 'all 0.5s' 
+	});
+	$("#spinner_message").html('Saving, please wait...');
+	$("#spinner").css({
+		opacity:1,
+		transition: 'all 0.5s' 
+	});
+	  
+	  
+	var fd = new FormData();
+		  var count = document.getElementById('fileToUpload').files.length;
+		  for (var index = 0; index < count; index ++)
+		  {
+				 var file = document.getElementById('fileToUpload').files[index];
+				 fd.append('myFile', file);
+		  }
+	var xhr = new XMLHttpRequest();
+	xhr.upload.addEventListener("progress", uploadProgress, false);
+	xhr.addEventListener("load", uploadComplete, false);
+	xhr.addEventListener("error", uploadFailed, false);
+	xhr.addEventListener("abort", uploadCanceled, false);
+	xhr.open("http://www.ihaxdns.com/ihaxdns/apps/camera/POST", "savetofile.jpg");
+	xhr.send(fd);
+  }
+
+  function uploadProgress(evt) {
+	if (evt.lengthComputable) {
+	  var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+	  document.getElementById('upload_progress').innerHTML = percentComplete.toString() + '%';
+	}
+
+	else {
+	  document.getElementById('upload_progress').innerHTML = 'unable to compute';
+	}
+  }
+
+  function uploadComplete(evt) {
+	$("#wait").css({
+		 opacity:0,
+		 transition: 'all 0.5s' 
+	});
+	$("#spinner").css({
+		 opacity:0,
+		 transition: 'all 0.5s' 
+	});
+	$("#photo_options").show();
+	fileinfo = evt.target.responseText.split('|');
+  }
+
+  function uploadFailed(evt) {
+	alert("There was an error attempting to upload the file.");
+  }
+
+  function uploadCanceled(evt) {
+	alert("The upload has been canceled by the user or the browser dropped the connection.");
+  }
+	  
+$(document).ready(function(e) {
+
+	$("#mybutton").css({
+		"background-size": "60vw",
+		opacity:1,
+		transition: 'all 0.5s'
+	});
+
+	$("#photo_options").hide();
+	$('#fileToUpload').change(function() {
+		readURL(this);
+		uploadFile();
+	})    
+});
+
+
+
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+	$('#previewHolder').attr('src', e.target.result);
+		$("#previewHolder").css({
+			opacity:1
+		});
+    }
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+function delete_file_confirm() {
+	
+	//alert('ping: ' + fileinfo[1]);
+	
+	
+	
+	$("#confim_delete").show();	
+	$("#delete_buttons").css({
+		bottom: (0 - $("#delete_buttons").height())
+	});
+
+	setTimeout( function() {
+		$("#delete_buttons").css({
+			bottom: 0,
+			transition: 'all 0.3s'	
+		});
+	}, 0);
+
+
+
+}
+
+function delete_file(e) {
+	if (e == 'confirm') {
+		$("#spinner_message").html('Deleting, please wait...');
+		$("#upload_progress").html('');
+		
+		setTimeout(function() {
+			$("#confim_delete").hide();
+			$("#wait").css({
+				opacity:0.5,
+				transition: 'all 0.5s' 
+			});
+			$("#spinner").css({
+				opacity: 1, 
+				transition: 'all 0.5s'
+			});
+		},100);
+
+		$("#delete_buttons").hide();
+		$("#photo_options").hide();
+		
+		setTimeout(function() {
+
+			$.ajax({ // Send the username val to another checker.php using Ajax in POST menthod
+				type : 'POST',
+				data : {
+					ip: fileinfo[0],
+					filename: fileinfo[1]
+				},
+				async: false,
+				url  : '../photos/delete_photo.php',
+				success: function(responseText){ // Get the result and asign to each cases
+					window.location = ('camera.html');
+				}
+			});	
+		},1000);
+		
+	} else if (e == 'cancel') {
+
+		$("#delete_buttons").css({
+			bottom: (0 - $("#delete_buttons").height()),
+			transition: 'all 0.3s'	
+		});
+		setTimeout( function() {
+			$("#confim_delete").hide();
+			$("#spinner").css({
+				opacity: 0
+			});
+
+		}, 300);
+
+	}
+}
+
+
+
+
+
+
+</script>
+
+</head>
+
+<body style="position:relative; background-color:#000; text-align:center;">
+
+<div id="mybutton" style="position:relative; width:100%; height:100%;
+opacity:0;
+background-image:url(../../settings/player_record.png);
+background-repeat:no-repeat;
+background-size:0vw;
+background-position:center;">
+    <form id="form1" enctype="multipart/form-data" method="post" action="http://ihaxdns.com/ihaxdns/apps/camera/Upload.aspx">
+        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();" accept="image/*" capture="camera" />
+    
+        <input id="upload" type="button" onclick="uploadFile()" value="Upload" style="display:none;" />
+        <div id="progress"></div>
+    
+    </form>
+    
+	<div style="position:absolute; width:100%; height:auto; text-align:center; font-family:iPhone; font-weight:500; font-size:3.5vw; bottom:20px; margin:0 auto;">Camera is only supported on iOS 7.0-8.0</div>   
+</div>
+
+<img id="previewHolder" alt="Uploaded Image Preview Holder" style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0;"/>
+
+
+
+<div id="wait" style="position:absolute; top:0; left:0; 
+width:100%; height:100%; 
+background-color:#000; 
+opacity:0;"></div>
+
+<div id="spinner" style="position:absolute; 
+  display: -webkit-flex;
+  display: flex;
+ -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+              top:0; left:0;
+width:100%; height:100%; 
+opacity:0;">
+
+	<div style="display:flex;">
+    	<img src="../../settings/wait.gif" style="width:20vw; margin-bottom:40px;" /><br />
+        <div id="spinner_message" style="font-family:iPhone; color:#fff; font-size:5vw;"></div>        
+        <div id="upload_progress" style="font-family:iPhone; color:#fff; font-size:7.5vw; margin-top:15px;"></div>
+    </div>
+
+
+
+</div>
+
+<div id="confim_delete" style="position:absolute; top:0; left:0; 
+width:100%; height:100%; 
+background-color:rgba(0,0,0,0.5); 
+z-index:20000;
+display:none;">
+	
+    
+    <div id="delete_buttons" style="position:absolute; left:0; width:100%; margin:0 auto; text-align:center;">
+        <div style="position:relative; top:10px; width:95vw; height:auto; margin:0 auto; background-color:#fff; border-radius:6px;
+        font-family:iPhone; font-size:7vw; font-weight:500; color:#fd472b; opacity:0.9;" onclick="delete_file('confirm');">
+            <p style="margin:20px 0; padding:25px 0;">Delete Photo</p>
+        </div>
+        <div style="position:relative; width:95vw; height:auto; margin:0 auto; background-color:#fff; border-radius:6px;
+        font-family:iPhone; font-size:7vw; font-weight:700; color:#007aff; opacity:0.9;" onclick="delete_file('cancel');">
+            <p style="margin:20px 0; padding:25px 0;">Cancel</p>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<div id="photo_options" style="position:absolute; bottom:0; left:0;
+width:100%; height:auto; overflow:auto;
+background-color:#f6f6f6; border-top:solid 2px #ebebeb;
+padding:15px 20px; text-align:left;
+display:none;
+  display: -webkit-flex;
+  display: flex;
+ -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+
+z-index:10000;">
+
+
+<div style="position:relative; float:left; width:calc(100% / 3); text-align:left; " onclick="window.location = ('camera.html');">
+    <img src="../../settings/camera_icon.png" style="width:10vw;" />
+</div>
+<div style="position:relative; float:left; width:calc(100% / 3); text-align:center;">
+	<img src="../../settings/share.png" style="width:11vw;" />
+</div>
+<div id="delete_file_id" style="position:relative; float:left; width:calc(100% / 3); text-align:right;" onclick="delete_file_confirm();">
+    <img src="../../settings/trash.png" style="width:7.5vw;" />
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+<script>
+</script>
+
+</body>
+
+<!-- Mirrored from ihaxdns.com/ihaxdns/apps/camera/camera.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Oct 2017 14:48:16 GMT -->
+</html>

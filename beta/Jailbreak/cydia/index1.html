@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" type="text/css" href="css/framework7.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/my-app.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+        <script type="text/javascript" src="js/themeplugin.js"></script>
+        <script type="text/javascript" src="lite.js"></script>
+        <script type="text/javascript" src="inobounce.js"></script>
+        <title>HexBreak</title>
+        <style type="text/css">
+         .ios .page, .ios .navbar {
+         background-color: white!important;
+         }
+         .swiper-slide {
+         width: 100%;
+         max-width: 383px;
+         }
+        </style>
+        <style>
+            .contact-header {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            }
+
+            @media only screen and (max-width: 373px) and (orientation : portrait){
+            #onepnal { display: block; } 
+            #twopnal { display: none; } 
+            }
+            @media only screen and (max-width: 660px) and (orientation : landscape) {
+            #onepnal { display: block; } 
+            #twopnal { display: none; } 
+            }
+            @media only screen and (min-width: 374px) and (max-width: 412px) and (orientation : portrait){
+            #onepnal { display: block; } 
+            #twopnal { display: none; } 
+            }
+            @media only screen and (min-width: 662px) and (max-width: 730px) and (orientation : landscape){
+            #onepnal { display: block; } 
+            #twopnal { display: none; } 
+            }
+            @media only screen and (min-width: 413px) and (max-width: 766px) and (orientation : portrait){
+            #onepnal { display: block; } 
+            #twopnal { display: none; } 
+            }
+            @media only screen and (min-width: 732px) and (max-width: 860px) and (orientation : landscape){
+            #onepnal { display: block; } 
+            #twopnal { display: none; } 
+            }
+
+            /*  ///////////////////////////// iPad portrait /////////////////////////////////////////  */
+            @media only screen and (min-width: 768px) and (max-width: 1022px) and (orientation: portrait){
+            #onepnal { display: none; } 
+            #twopnal { display: block; } 
+            }
+            /* //////////////////////////////  iPad landscape///////////////////////////////////////// */
+            @media only screen and (min-width: 862px) and (max-width: 1024px) and (orientation : landscape){
+            #onepnal { display: none; } 
+            #twopnal { display: block; } 
+            }
+            /* //////////////////////////////  iPad pro portrait ///////////////////////////////////////// */
+            @media only screen and (min-width: 1024px) and (max-width: 1278px) and (orientation: portrait){
+            #onepnal { display: none; } 
+            #twopnal { display: block; } 
+            }
+            /* //////////////////////////////  iPad pro landscape///////////////////////////////////////// */
+            @media only screen and (min-width: 1362px) and (max-width: 1380px) and (orientation : landscape){
+            #onepnal { display: none; } 
+            #twopnal { display: block; } 
+            }
+        </style>
+        <link rel="stylesheet" href="dist/css/framework7.ios.css">
+        <link rel="stylesheet" href="dist/css/framework7.ios.colors.css">
+        <link rel="stylesheet" href="css/kitchen-sink.css">
+        <link rel="icon" href="logo.png">
+        <link rel="apple-touch-icon" href="logo.png">
+        <script type="text/javascript" src="js/mobile.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="inobounce.js"></script>
+      <script type="text/javascript">
+         iNoBounce.enable();
+      </script>
+    </head>
+    <body id="changethistheme" class="theme-blue" onload="updateAdvert()">
+        <div id="flpx" style="display:none;" height="0" width="0"></div>
+        <div class="statusbar-overlay"></div>
+        <div class="panel-overlay"></div>
+        <div class="views tabs toolbar-through">
+            <div id="view1" class="view view-main tab active" data-page="index-1">
+                <div class="navbar">
+                    <div class="navbar-inner navbar-on-center">
+                        <div class="left">
+                            <a href="#" class="alert-text-title">About</a>
+                        </div>
+                        <div class="center sliding" style="left: 5px; transform: translate3d(0px, 0px, 0px);">
+                            Home
+                        </div>
+                        <div class="right">
+                            <a href="#" onclick="myFunction()" class="">Reload</a>
+                            <script>
+                                function myFunction() {
+                                location.reload();
+                                }
+                            </script>
+                        </div>
+                    </div>
+                     <!-- Navbar inner for Services page-->
+                      <div data-page="services" class="navbar-inner cached">
+                        <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+                        <div class="center sliding">Services</div>
+                      </div>
+                </div>
+                <div class="pages navbar-through">
+                    <div data-page="index-1" class="page page-on-center" id="onepnal">
+                        <div class="page-content">
+                            <div>
+                                <div class="row">
+                                    <div class="col-auto tablet-auto" style="text-align: center;"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto tablet-auto" style="margin-top: 5px"></div>
+                                </div>
+                            </div>
+                            <div class="content-block" style="
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                                height: 76px;
+                                ">
+                                <img src="logo.png" style="width: 60px;height: 60px;border-radius:21%;float:left;margin-right:10px;margin-left: 10px;padding-top: 5px;" onclick="resetSystem()" class="">
+                                <center style="
+                                    height: 80px;
+                                    ">
+                                    <font size="4">
+                                        <div class="story-info" style="
+                                            padding-top: 15px;
+                                            ">Welcome to HexBreak</div>
+                                    </font>
+                                    <div class="story-info">by <font size="2"><a href="http://twitter.com/iNuclearApp" class="external" style="color: #586C90; font-weight: bold;">iNuclearApp Team</a></font></div>
+                                </center>
+                            </div>
+                            <div class="contact-header">
+                                <div class="list-block" style="
+                                    width: 50%;
+                                    margin-top: 0px; 
+                                    margin-bottom: 9px;                             
+                                    ">
+                                    <ul>
+                                        <li>
+                                            <a href="http://fb.me/iNuclearApp" class="item-link  external item-content">
+                                                <div class="item-media">
+                                                    <img class="icon" src="../../../11.0/icons/facebook.png" style="
+                                                        width: 29px;
+                                                        ">
+                                                </div>
+                                                <div class="item-inner" style="
+                                                    margin-left: 5px;
+                                                    ">
+                                                    <div class="item-title">iNuclearApp</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-block" style="
+                                    width: 1px;
+                                    margin-top: 0px; 
+                                    margin-bottom: 9px;                             
+                                    ">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content">
+                                                <div class="item-media"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title"></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-block" style="
+                                    width: 50%;
+                                    margin-top: 0px;
+                                    margin-bottom: 9px;
+                                    ">
+                                    <ul>
+                                        <li>
+                                            <a href="http://twitter.com/iNuclearApp" class="item-link external item-content">
+                                                <div class="item-media">
+                                                    <img class="icon" src="../../../11.0/icons/twitter.png" style="
+                                                        width: 29px;
+                                                        ">
+                                                </div>
+                                                <div class="item-inner" style="
+                                                    margin-left: 5px;
+                                                    ">
+                                                    <div class="item-title">iNuclearApp</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="contact-header">
+                                <div class="list-block" style="
+                                    width: 50%;
+                                    margin-top: 0px; 
+                                    margin-bottom: 5px;                             
+                                    ">
+                                    <ul>
+                                        <li>
+                                            <a href="featured.html" class="item-link item-content">
+                                                <div class="item-media">
+                                                    <img class="icon" src="http://cydia.saurik.com/ui/ios~iphone/1.1/home/featured.png" style="
+                                                        width: 29px;
+                                                        border-radius:21%;
+                                                        ">
+                                                </div>
+                                                <div class="item-inner" style="
+                                                    margin-left: 5px;
+                                                    ">
+                                                    <div class="item-title">Featured</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-block" style="
+                                    width: 1px;
+                                    margin-top: 0px;
+                                    margin-bottom: 5px;                              
+                                    ">
+                                    <ul style="background: #C8C7CC;">
+                                        <li>
+                                            <a href="#" class="item-link item-content">
+                                                <div class="item-media"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title"></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-block" style="
+                                    width: 50%;
+                                    margin-top: 0px;
+                                    margin-bottom: 5px;
+                                    ">
+                                    <ul>
+                                        <li>
+                                        <script type="text/javascript"> 
+                                        <!-- 
+                                        function popupwnd(url, toolbar, menubar, locationbar, resize, scrollbars, statusbar, left, top, width, height) 
+                                        { 
+                                        if (left == -1) 
+                                        { 
+                                        left = (screen.width/2)-(width/2); 
+                                        } 
+                                        if (top == -1) 
+                                        { 
+                                        top = (screen.height/2)-(height/2); 
+                                        } 
+                                        var popupwindow = this.open(url, '', 'toolbar=' + toolbar + ',menubar=' + menubar + ',location=' + locationbar + ',scrollbars=' + scrollbars + ',resizable=' + resize + ',status=' + statusbar + ',left=' + left + ',top=' + top + ',width=' + width + ',height=' + height); 
+                                        } 
+                                        //--> 
+                                     </script> 
+                                 <a class="item-link item-content" href="pages/theme.html" class="button" >
+                                                <div class="item-media">
+                                                    <img class="icon" src="http://cydia.saurik.com/ui/ios~iphone/1.1/home/themes.png" style="
+                                                        border-radius:21%;
+                                                        width: 29px;
+                                                        ">
+                                                </div>
+                                                <div class="item-inner" style="
+                                                    margin-left: 5px;
+                                                    ">
+                                                    <div class="item-title">Themes</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                            <div class="list-block" style="
+                                margin-top: 4px;
+                                margin-bottom: 5px;
+                                ">
+                            <ul style="background:#E5EEF5;">
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img class="icon" src="http://cydia.saurik.com/icon/com.kstreich-dev.3gunrestrictor5.png" style="
+                                                border-radius:21%;
+                                                width: 29px;
+                                                "></div>
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">3G Unrestrictor</div>
+                                                <font size="1">
+                                                    <div class="item-after" style="color:#3D4E62;">     &zwj;   trick WiFi-only apps<br>iOS 7, LTE supported</div>
+                                                </font>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img class="icon" src="images/mywi.png" style="
+                                                border-radius:21%;
+                                                width: 29px;
+                                                "></div>
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">MyWi 8</div>
+                                                <font size="1">
+                                                    <div class="item-after" style="color:#3D4E62;">   WiFi hostpoiunt with advanced features<br>&zwj;    &zwj;      &zwj;        &zwj;      &zwj;   including WiFi sharing and 5 GHz</div>
+                                                </font>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul style="background:#EEFFEF;">
+                                    <li>
+                                        <!-- <a href="login.html" class="item-link item-content"> -->
+                                        <a href="pages/account.html" class="item-link item-content">
+                                            <div class="item-media"><img class="icon" src="https://pp.vk.me/c621831/v621831541/15ade/brFmzU3TugE.jpg" style="
+                                                border-radius:21%;
+                                                width: 29px;
+                                                "></div>
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">Manage Account</div>
+                                            </div>
+                                        </a>
+                                        <span class="badge" id="badge">
+                                            <label>
+                                                <p style="
+                                                    margin-top: 0px;
+                                                    margin-bottom: 0px;
+                                                    ">new</p>
+                                            </label>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Upgrading &amp; HexBreak Help</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">More Package Sources</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul style="background:#E5EEF5;">
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img class="icon" src="http://cydia.saurik.com/icon/com.aaronash.barrel.png" style="
+                                                border-radius:21%;
+                                                width: 29px;
+                                                "></div>
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">Barrel</div>
+                                                <font size="1">
+                                                    <div class="item-after" style="color:#3D4E62;">   curl, whirl, and fade through icons<br>   &zwj;      &zwj;      &zwj;      &zwj;   now fully iOS 8.3 compatible</div>
+                                                </font>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-block-title" style="
+                                margin-top: 15px;
+                                margin-bottom: 9px;
+                                ">user guides</div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul>
+                                    <li>
+                                        <a href="ask.html" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Frequently Asked Questions</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Storage Information</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-block-title" style="
+                                margin-top: 15px;
+                                margin-bottom: 9px;
+                                ">community</div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul>
+                                    <li>
+                                        <a href="http://twitter.com/iNuclearApp" class="item-link item-content external">
+                                            <div class="item-media"><img class="icon" src="../../settings/icons/twitter.jpg" style="
+                                                border-radius:20%; 
+                                                width: 29px;"></div>
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">Twitter (Support)</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-block-title" style="
+                                margin-top: 15px;
+                                margin-bottom: 9px;
+                                ">developers only</div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Useful Developer Resources</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul>
+                                    <li>
+                                        <a href="policy.html" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Privacy Policy</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="font-size:70%;text-align:center;color:gray;margin:10px;">
+                                <p style="margin: -0.4em 0;">iPhone, iOS <span id="mydiv"></span>, HexBreak 1.0 (en) </p><br>
+                                <p style="margin: -0.4em 0;">2281880c069fc2478c11f7f232ac2e53c30a34bb</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--   panel one for mobile end    -->
+                    <!--   panel two for ipad start    -->
+                    <div data-page="index-1" class="page page-on-center" id="twopnal">
+                        <div class="page-content">
+                                                        <div style="
+                                    width: 49%;
+                                    margin-top: 0px; 
+                                    margin-bottom: 9px;  
+                                    float: left;                           
+                                    ">       
+                            <div>
+                                <div class="row">
+                                    <div class="col-auto tablet-auto" style="text-align: center;"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto tablet-auto" style="margin-top: 5px"></div>
+                                </div>
+                            </div>
+                            <div class="content-block" style="
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                                height: 76px;
+                                ">
+                                <img src="logo.png" style="width: 60px;height: 60px;border-radius:21%;float:left;margin-right:10px;margin-left: 10px;padding-top: 5px;" onclick="resetSystem()" class="">
+                                <center style="
+                                    height: 80px;
+                                    ">
+                                    <font size="4">
+                                        <div class="item-title" style="
+                                            padding-top: 15px;
+                                            ">Welcome to HexBreak</div>
+                                    </font>
+                                    <div class="story-info">by <font size="2"><a href="http://twitter.com/iNuclearApp" class="external" style="color: #586C90; font-weight: bold;">iNuclearApp Team</a></font></div>
+                                </center>
+                            </div>
+                            <div class="contact-header">
+                                <div class="list-block" style="
+                                    width: 50%;
+                                    margin-top: 0px; 
+                                    margin-bottom: 9px;                             
+                                    ">
+                                    <ul>
+                                        <li>
+                                            <a href="http://fb.me/iNuclearApp" class="item-link  external item-content">
+                                                <div class="item-media">
+                                                    <img class="icon" src="../../../11.0/icons/facebook.png" style="
+                                                        width: 29px;
+                                                        ">
+                                                </div>
+                                                <div class="item-inner" style="
+                                                    margin-left: 5px;
+                                                    ">
+                                                    <div class="item-title">iNuclearApp</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-block" style="
+                                    width: 1px;
+                                    margin-top: 0px; 
+                                    margin-bottom: 9px;                             
+                                    ">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content">
+                                                <div class="item-media"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title"></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-block" style="
+                                    width: 50%;
+                                    margin-top: 0px;
+                                    margin-bottom: 9px;
+                                    ">
+                                    <ul>
+                                        <li>
+                                            <a href="http://twitter.com/iNuclearApp" class="item-link external item-content">
+                                                <div class="item-media">
+                                                    <img class="icon" src="../../../11.0/icons/twitter.png" style="
+                                                        width: 29px;
+                                                        ">
+                                                </div>
+                                                <div class="item-inner" style="
+                                                    margin-left: 5px;
+                                                    ">
+                                                    <div class="item-title">iNuclearApp</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="contact-header">
+                                <div class="list-block" style="
+                                    width: 50%;
+                                    margin-top: 0px; 
+                                    margin-bottom: 5px;                             
+                                    ">
+                                    <ul>
+                                        <li>
+                                            <a href="featured.html" class="item-link item-content">
+                                                <div class="item-media">
+                                                    <img class="icon" src="http://cydia.saurik.com/ui/ios~iphone/1.1/home/featured.png" style="
+                                                        width: 29px;
+                                                        border-radius:21%;
+                                                        ">
+                                                </div>
+                                                <div class="item-inner" style="
+                                                    margin-left: 5px;
+                                                    ">
+                                                    <div class="item-title">Featured</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-block" style="
+                                    width: 1px;
+                                    margin-top: 0px;
+                                    margin-bottom: 5px;                              
+                                    ">
+                                    <ul style="background: #C8C7CC;">
+                                        <li>
+                                            <a href="#" class="item-link item-content">
+                                                <div class="item-media"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title"></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-block" style="
+                                    width: 50%;
+                                    margin-top: 0px;
+                                    margin-bottom: 5px;
+                                    ">
+                                    <ul>
+                                        <li>
+                                        <script type="text/javascript"> 
+                                        <!-- 
+                                        function popupwnd(url, toolbar, menubar, locationbar, resize, scrollbars, statusbar, left, top, width, height) 
+                                        { 
+                                        if (left == -1) 
+                                        { 
+                                        left = (screen.width/2)-(width/2); 
+                                        } 
+                                        if (top == -1) 
+                                        { 
+                                        top = (screen.height/2)-(height/2); 
+                                        } 
+                                        var popupwindow = this.open(url, '', 'toolbar=' + toolbar + ',menubar=' + menubar + ',location=' + locationbar + ',scrollbars=' + scrollbars + ',resizable=' + resize + ',status=' + statusbar + ',left=' + left + ',top=' + top + ',width=' + width + ',height=' + height); 
+                                        } 
+                                        //--> 
+                                     </script> 
+                                 <a class="item-link item-content" href="pages/theme.html" class="button" >
+                                                <div class="item-media">
+                                                    <img class="icon" src="http://cydia.saurik.com/ui/ios~iphone/1.1/home/themes.png" style="
+                                                        border-radius:21%;
+                                                        width: 29px;
+                                                        ">
+                                                </div>
+                                                <div class="item-inner" style="
+                                                    margin-left: 5px;
+                                                    ">
+                                                    <div class="item-title">Themes</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-block inset">
+                                <ul>
+                                    <li>
+                    <div class="item-content">
+                      <div class="item-media">
+                       <font color="blue"><i class="fa fa-eye fa-2x"></i></font>
+                      </div>
+                      <div class="item-inner">
+                        Dark Mode
+                        <label class="label-switch">
+                          <input type="checkbox" id="theme" onchange="changeTheme()">
+                          <div class="checkbox">
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+                            <div class="list-block" style="
+                                margin-top: 4px;
+                                margin-bottom: 5px;
+                                ">
+                            <ul style="background:#E5EEF5;">
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img class="icon" src="http://cydia.saurik.com/icon/com.kstreich-dev.3gunrestrictor5.png" style="
+                                                border-radius:21%;
+                                                width: 29px;
+                                                "></div>
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">3G Unrestrictor</div>
+                                                <font size="1">
+                                                    <div class="item-after" style="color:#3D4E62;">     &zwj;   trick WiFi-only apps<br>iOS 7, LTE supported</div>
+                                                </font>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img class="icon" src="images/mywi.png" style="
+                                                border-radius:21%;
+                                                width: 29px;
+                                                "></div>
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">MyWi 8</div>
+                                                <font size="1">
+                                                    <div class="item-after" style="color:#3D4E62;">   WiFi hostpoiunt with advanced features<br>&zwj;    &zwj;      &zwj;        &zwj;      &zwj;   including WiFi sharing and 5 GHz</div>
+                                                </font>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul style="background:#EEFFEF;">
+                                    <li>
+                                        <!-- <a href="login.html" class="item-link item-content"> -->
+                                        <a href="pages/account.html" class="item-link item-content">
+                                            <div class="item-media"><img class="icon" src="https://pp.vk.me/c621831/v621831541/15ade/brFmzU3TugE.jpg" style="
+                                                border-radius:21%;
+                                                width: 29px;
+                                                "></div>
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">Manage Account</div>
+                                            </div>
+                                        </a>
+                                        <span class="badge" id="badge">
+                                            <label>
+                                                <p style="
+                                                    margin-top: 0px;
+                                                    margin-bottom: 0px;
+                                                    ">new</p>
+                                            </label>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Upgrading &amp; HexBreak Help</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">More Package Sources</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul style="background:#E5EEF5;">
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img class="icon" src="http://cydia.saurik.com/icon/com.aaronash.barrel.png" style="
+                                                border-radius:21%;
+                                                width: 29px;
+                                                "></div>
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">Barrel</div>
+                                                <font size="1">
+                                                    <div class="item-after" style="color:#3D4E62;">   curl, whirl, and fade through icons<br>   &zwj;      &zwj;      &zwj;      &zwj;   now fully iOS 8.3 compatible</div>
+                                                </font>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-block-title" style="
+                                margin-top: 15px;
+                                margin-bottom: 9px;
+                                ">user guides</div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul>
+                                    <li>
+                                        <a href="ask.html" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Frequently Asked Questions</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Storage Information</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-block-title" style="
+                                margin-top: 15px;
+                                margin-bottom: 9px;
+                                ">community</div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul>
+                                    <li>
+                                        <a href="http://twitter.com/iNuclearApp" class="item-link item-content external">
+                                            <div class="item-media"><img class="icon" src="../../settings/icons/twitter.jpg" style="
+                                                border-radius:20%; 
+                                                width: 29px;"></div>
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">Twitter (Support)</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-block-title" style="
+                                margin-top: 15px;
+                                margin-bottom: 9px;
+                                ">developers only</div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Useful Developer Resources</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <ul>
+                                    <li>
+                                        <a href="policy.html" class="item-link item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Privacy Policy</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="font-size:70%;text-align:center;color:gray;margin:10px;">
+                                <p style="margin: -0.4em 0;">iPad, iOS <span id="mydiv"></span>, HexBreak 1.0 (en) </p><br>
+                                <p style="margin: -0.4em 0;">2281880c069fc2478c11f7f232ac2e53c30a34dd</p>
+                               <!-- iPhone9,2, iOS 11.0, Cydia 1.1.29 (en-us) <br>
+                                2281880c069fc2478c11f7f232ac2e53c30a34dd -->
+                            </div>
+                            </div>
+
+                            <!-- right side -->
+                                <div style="
+                                    width: 49%;
+                                    margin-top: 0px; 
+                                    margin-bottom: 9px;  
+                                    float: right;                           
+                                    "> 
+                                <div>
+                                <div class="row">
+                                    <div class="col-auto tablet-auto" style="text-align: center;"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto tablet-auto" style="margin-top: 5px"></div>
+                                </div>
+                            </div>
+                            <div class="content-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 0px;
+                                height: 76px;
+                                ">
+                                
+                            </div>                           
+                            <div class="list-block" style="
+                                margin-top: 9px;
+                                margin-bottom: 5px;
+                                ">
+                                <div class="content-block-title" style="margin-top: -42px; margin-bottom: 9px;">EXTENSIONS  USEFUL ON IPAD</div>                                                                                         
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img class="icon" src="images/home/activator.png" style="border-radius:21%; width: 29px;"></div> 
+                                                                                                                                             
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">Activator</div>
+                                            </div>
+                                        </a>
+                                    </li>                                                     
+                                </ul>
+                            </div>                            
+                            <div class="content-block-title" style="margin-top: 15px; margin-bottom: 9px;">PRODUCTS DESIGNED FOR IPAD</div>
+                                                                                                                          
+                            <div class="list-block" style="margin-top: 9px; margin-bottom: 5px;">                                                                                                
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-media"><img class="icon" src="images/home/auxo.png" style="border-radius:21%; width: 29px;"></div> 
+                                            <div class="item-inner" style="
+                                                margin-left: 5px;
+                                                ">
+                                                <div class="item-title">Auxo</div>
+                                            </div>
+                                        </a>
+                                    </li>                                
+                                </ul>
+                            </div>                            
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--   panel two for ipad end    -->
+
+                    <!-- Services Page-->
+                      <div data-page="services" class="page cached">
+                        <div class="page-content">
+                          <div class="content-block">
+                            <p>You may go <a href="#" class="back">back</a> or load <a href="#about">About</a> page.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor.    </p>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+            <div id="view2" class="view tab cached" data-page="index-2">
+                <div class="navbar">
+                    <div class="navbar-inner navbar-on-center">
+                        <div class="left">
+                            <a href="#" onclick="myFunction()" class="">Refresh</a>
+                            <script>
+                                function myFunction() {
+                                location.reload();
+                                }
+                            </script>
+                        </div>
+                        <div class="center sliding" style="left: -15.5px; transform: translate3d(0px, 0px, 0px);">Sources</div>
+                        <div class="right">
+                            <a href="#" class="prompt-title-ok">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages navbar-through">
+                    <div data-page="index-2" class="page">
+                        <div class="page-content" style="background:#fff; background-size: cover;">
+                            <div class="list-block contacts-block">
+                                <div class="list-group">
+                                    <div class="list-block media-list" style="
+                                        margin-top: 0px;
+                                        margin-bottom: 0px;
+                                        ">
+                                        <ul>
+                                           <li class="swipeout">
+                                                <a href="#" onclick="parent.location='sources/#.html'"  class="item-link item-content swipeout-content" style="">
+                                                <div class="item-media"><img class="icon" src="../folder.png" style="border-radius:21%; width: 29px;"></div>
+                                                                                                               
+                                                <div class="item-inner" style="padding-top: 5px; padding-bottom: 7px; margin-left: 0px; padding-left: 15px;">
+                                                                                                                                                                                                                                                                
+                                                    <div class="item-title-row" style="margin-top: 7px;">
+                                                        
+                                                    <div class="item-title" style="color: #000; font-weight: bold; height: 22px;"><font size="4">All Sources</font>
+                                                    </div>
+                                                    <div class="item-after"><span id="resouces_preloader2" class="preloader" style="opacity: 1.0"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="list-group">
+                                    <ul>
+                                        <li class="list-group-title">Individual Sources</li>
+                                    </ul>
+                                    <div class="list-block media-list" style="
+                                        margin-top: 0px;
+                                        margin-bottom: 0px;
+                                        ">
+                                        <ul>
+                                            <li class="swipeout">
+                                                <a href="#" onclick="parent.location='sources/#.html'"  class="item-link item-content swipeout-content" style="">
+                                                <div class="item-media"><img class="icon" src="../logo.jpg" style="border-radius:21%; width: 29px;"></div>
+                                                                                                               
+                                                <div class="item-inner" style="padding-top: 5px; padding-bottom: 7px; margin-left: 0px; padding-left: 15px;">
+                                                                                                                                                                                                                                                                
+                                                    <div class="item-title-row" style="margin-top: 7px;">
+                                                        
+                                                    <div class="item-title" style="color: #000; font-weight: bold; height: 22px;"><font size="4">iNuclearApp</font></div>
+                                                    <div class="item-after"><span id="resouces_preloader3" class="preloader" style="opacity: 1.0"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swipeout">
+                                                <a href="#" onclick="parent.location='sources/#.html'"  class="item-link item-content swipeout-content" style="">
+                                                <div class="item-media"><img class="icon" src="../../settings/icons/tweakbox.png" style="border-radius:21%; width: 29px;"></div>
+                                                                                                               
+                                                <div class="item-inner" style="padding-top: 5px; padding-bottom: 7px; margin-left: 0px; padding-left: 15px;">
+                                                                                                                                                                                                                                                                
+                                                    <div class="item-title-row" style="margin-top: 7px;">
+                                                        
+                                                    <div class="item-title" style="color: #000; font-weight: bold; height: 22px;"><font size="4">TweakBox</font></div>
+                                                    <div class="item-after"><span id="resouces_preloader4" class="preloader" style="opacity: 1.0"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li><li class="swipeout">
+                                                <a href="#" onclick="parent.location='sources/#.html'" class="item-link item-content swipeout-content" style="">
+                                                <div class="item-media"><img class="icon" src="../../settings/icons/topstore.jpg" style="border-radius:21%; width: 29px;"></div>
+                                                                                                               
+                                                <div class="item-inner" style="padding-top: 5px; padding-bottom: 7px; margin-left: 0px; padding-left: 15px;">
+                                                                                                                                                                                                                                                                
+                                                    <div class="item-title-row" style="margin-top: 7px;">
+                                                        
+                                                    <div class="item-title" style="color: #000; font-weight: bold; height: 22px;"><font size="4">TopStore</font></div>
+
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="item-link item-content swipeout-content" style="">
+                                                    <div class="item-media"></div>
+                                                    <div class="item-inner" style="
+                                                        padding-top: 5px;
+                                                        padding-bottom: 7px;
+                                                        margin-left: 0px;
+                                                        padding-left: 15px;
+                                                        ">
+                                                        <div class="item-title" style="
+                                                            padding-right: 0px;
+                                                            ">
+                                                            <div class="item-title" style="color: #000; font-weight: bold; height: 21px;"><font size="3"></font></div>
+                                                        </div>
+                                                        <div class="item-subtitle" style="
+                                                            color: #666666;
+                                                            height: 19px;
+                                                            padding-bottom: 0px;
+                                                            "><font size="2"></font></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="item-link item-content swipeout-content" style="">
+                                                    <div class="item-media"></div>
+                                                    <div class="item-inner" style="
+                                                        padding-top: 5px;
+                                                        padding-bottom: 7px;
+                                                        margin-left: 0px;
+                                                        padding-left: 15px;
+                                                        ">
+                                                        <div class="item-title">
+                                                            <div class="item-title" style="color: #000; font-weight: bold; height: 21px;"><font size="3"></font></div>
+                                                        </div>
+                                                        <div class="item-subtitle" style="
+                                                            color: #666666;
+                                                            height: 19px;
+                                                            padding-bottom: 0px;
+                                                            "><font size="2"></font></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="item-link item-content swipeout-content" style="">
+                                                    <div class="item-media"></div>
+                                                    <div class="item-inner" style="
+                                                        padding-top: 5px;
+                                                        padding-bottom: 7px;
+                                                        margin-left: 0px;
+                                                        padding-left: 15px;
+                                                        ">
+                                                        <div class="item-title">
+                                                            <div class="item-title" style="color: #000; font-weight: bold; height: 21px;"><font size="3"></font></div>
+                                                        </div>
+                                                        <div class="item-subtitle" style="
+                                                            color: #666666;
+                                                            height: 19px;
+                                                            padding-bottom: 0px;
+                                                            "><font size="2"></font></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="item-link item-content swipeout-content" style="">
+                                                    <div class="item-media"></div>
+                                                    <div class="item-inner" style="
+                                                        padding-top: 5px;
+                                                        padding-bottom: 7px;
+                                                        margin-left: 0px;
+                                                        padding-left: 15px;
+                                                        ">
+                                                        <div class="item-title">
+                                                            <div class="item-title" style="color: #000; font-weight: bold; height: 21px;"><font size="3"></font></div>
+                                                        </div>
+                                                        <div class="item-subtitle" style="
+                                                            color: #666666;
+                                                            height: 19px;
+                                                            padding-bottom: 0px;
+                                                            "><font size="2"></font></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="item-link item-content swipeout-content" style="">
+                                                    <div class="item-media"></div>
+                                                    <div class="item-inner" style="
+                                                        padding-top: 5px;
+                                                        padding-bottom: 7px;
+                                                        margin-left: 0px;
+                                                        padding-left: 15px;
+                                                        ">
+                                                        <div class="item-title">
+                                                            <div class="item-title" style="color: #000; font-weight: bold; height: 21px;"><font size="3"></font></div>
+                                                        </div>
+                                                        <div class="item-subtitle" style="
+                                                            color: #666666;
+                                                            height: 19px;
+                                                            padding-bottom: 0px;
+                                                            "><font size="2"></font></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div id="view3" class="view tab cached" data-page="index-3">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" onclick="myFunction()" class="">Refresh</a>
+                            <script>
+                                function myFunction() {
+                                location.reload();
+                                }
+                            </script>
+                        </div>
+                        <div class="center sliding" style="left: -121.5px;">Changes</div>
+                    </div>
+                </div>
+                <div class="pages navbar-through">
+                    <div data-page="index-3" class="page">
+                        <div class="page-content" style="background:#fff; background-size: cover;">
+                            <div class="list-block media-list stories-list list-block-search searchbar-found" style="display: block; margin-top: 0px;">
+                                <ul>
+                                    <li class="">
+                                                <div class="swipeout-content">
+                                                    <a href="#" onclick="parent.location='app-installf25e.html?apps=220'" data-context-name="stories.1" class="item-content item-link">
+                                                        <div class="item-inner">
+                                                            <img class="appImage" style="width:70px; height:70px;border-radius:20%;float:left;margin-right:10px;" src="images/concepts/watch-os.png">
+                                                            <div class="item-title-row" style="color: #000; margin-top: 20px; font-size: 20px;">
+                                                            <div class="item-title">Watch Home(demo)</div>
+                                                        </div>                                                        
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--   ....................................................  search part  ..............................................   -->
+            <div id="view4" class="view tab cached" data-page="index-4">
+                <div class="navbar">
+                    <div class="navbar-inner" style="padding-left: 0px;padding-right: 0px;">
+
+                        <!-- <div class="center sliding" style="width: 100%; left: 0px;"> -->
+                        <div data-page="home" class="page">
+                          <!-- Search Bar -->
+                          <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+                            <div class="searchbar-input">
+                              <input type="search" placeholder="Search" id="serachme"><a href="#" class="searchbar-clear"></a>
+                            </div><a href="#" class="searchbar-cancel">Cancel</a>
+                          </form>
+                         
+                          <!-- Search Bar overlay -->
+                          <div class="searchbar-overlay"></div>
+                        </div>
+                    </div>
+                </div>            
+                                                           
+                        <div class="page-content" style="background:#fff; background-size: cover;"> 
+                                                 
+                            <!-- This block will be displayed if nothing found -->
+                            <div class="content-block searchbar-not-found">
+                              <div class="content-block-inner">Nothing found</div>
+                            </div> 
+                         
+                            <!-- This block will be displayed if anything found, and this list block is used a searbar target -->
+                            <div class="list-block list-block-search searchbar-found"> 
+                                <ul>
+                                <li class="item-content" class="">
+                                    <div class="item-media"></div>
+                                    <div class="item-inner">
+                                        <a href="#" onclick="parent.location='app-install9548.html?apps=001'">
+                                            <div class="item-title" id="my"><div class="my">Windows Mobile</div></div>
+                                        </a>
+                                    </div>                                 
+                                </li>
+                            </ul>
+                        </div> 
+                    </div> 
+            </div>
+            <!-- <script>
+            $(document).ready(function() {
+              $('#serachme').keyup(function() {
+                $('#my').show();
+
+              });
+            });
+        </script> -->
+    <!--   ....................................................  search part end   ........................................   -->
+            <div id="view5" class="view tab" data-page="index-4">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="center sliding" style="width: 80%;margin-left: auto;margin-right: auto; transform: translate3d(0px, 0px, 0px);">
+                            <div class="buttons-row" style="width: 80%;margin-left: auto;margin-right: auto;"><a href="#tab1" class="button tab-link active">User</a><a href="#tab2" class="button tab-link">Expert</a><a href="#tab3" class="button tab-link">Recent</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages navbar-through toolbar-through">
+                    <div data-page="index" class="page page-on-left">
+                        <div class="page-content">
+                            <!-- <div class="content-block-title">Welcome To Framework7</div>
+                            <div class="content-block"><a href="about.html" class="button">About Framework7</a></div>
+                            <div class="content-block-title">Framework7 Kitchen Sink</div> -->
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <a href="accordion.html" class="item-link">
+                                            <div class="item-content">
+                                                <div class="item-media"><i class="icon icon-f7"></i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title">Accordion</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="calendar.html" class="item-link">
+                                            <div class="item-content">
+                                                <div class="item-media"><i class="icon icon-f7"></i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title">Calendar / Datepicker</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="cards.html" class="item-link">
+                                            <div class="item-content">
+                                                <div class="item-media"><i class="icon icon-f7"></i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title">Cards</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>                              
+                                </ul>
+                            </div>
+
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <a href="color-themes.html" class="item-link">
+                                            <div class="item-content">
+                                                <div class="item-media"><i class="icon icon-f7"></i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title">Color Themes</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-link ks-generate-page">
+                                            <div class="item-content">
+                                                <div class="item-media"><i class="icon icon-f7"></i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title">Dynamically Generated Content</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <a href="transitions.html" class="item-link">
+                                            <div class="item-content">
+                                                <div class="item-media"><i class="icon icon-f7"></i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title">Transitions And Effects</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="core-features.html" class="item-link">
+                                            <div class="item-content">
+                                                <div class="item-media"><i class="icon icon-f7"></i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title">Core Features</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-page="tabs" class="page page-on-center">
+                        <div class="page-content">
+                            <div class="tabs">
+                                <div id="tab1" class="tab active">
+                                    <div class="list-block media-list stories-list list-block-search searchbar-found" style="display: block; margin-top: 0px;">
+                                        <ul>                                                                                                                 
+                                            <li class="">
+                                                <div class="swipeout-content">
+                                                    <a href="#" onclick="parent.location='app-installdccf.html?apps=258'"  data-context-name="stories.1" class="item-content item-link">
+                                                        <div class="item-inner">
+                                                            <img class="appImage" style="width:70px; height:70px;border-radius:20%;float:left;margin-right:10px;" src="../../settings/icons/youtube.png">
+                                                        <div class="item-title-row" style="color: #000; margin-top: 20px; font-size: 20px;">
+                                                            <div class="item-title">YouTube++</div>
+                                                        </div>                                                        
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="tab">
+                                    <div class="list-block media-list stories-list list-block-search searchbar-found" style="display: block; margin-top: 0px;margin-bottom: 0px;">
+                                        <ul>                                                                          
+                                            <li class="">
+                                                <div class="swipeout-content">
+                                                    <a href="#" onclick="parent.location='app-install00ae.html?apps=263'" data-context-name="stories.1" class="item-content item-link">
+                                                        <div class="item-inner">
+                                                            <img class="appImage" style="width:70px; height:70px;border-radius:20%;float:left;margin-right:10px;" src="images/plist/Video_Downloader.png">
+                                                            <div class="item-title-row" style="color: #000; margin-top: 20px; font-size: 20px;">
+                                                            <div class="item-title">Video Downloader</div>
+                                                        </div>                                                        
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tab3" class="tab">
+                                    <div class="list-block media-list stories-list list-block-search searchbar-found" style="display: block; margin-top: 0px;">
+                                        <ul>
+                                            <li class="">
+                                                <div class="swipeout-content">
+                                                    <a href="#" onclick="parent.location='app-installc2a1.html?apps=314'" data-context-name="stories.1" class="item-content item-link">
+                                                        <div class="item-inner">
+                                                            <img class="appImage" style="width:70px; height:70px;border-radius:20%;float:left;margin-right:10px;" src="images/plist/AngryBirds.png">
+                                                            <div class="item-title-row" style="color: #000; margin-top: 20px; font-size: 20px;">
+                                                            <div class="item-title">Angry Birds Go</div>
+                                                        </div>                                                        
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar tabbar tabbar-labels">
+                <div class="toolbar-inner">
+                    <a href="#view1" class="tab-link active"> 
+                        <i class="icon ks-tabbar-icon-1"></i>
+                        <span class="tabbar-label">HexBreak</span>
+                    </a>
+                    <a href="#view2" id="manage-button" class="tab-link">
+                        <i class="icon ks-tabbar-icon-2">
+                            <div id="sources_loader" style="opacity: 0.0;">
+                                <!--
+                                <span class="badge bg-red">
+                                    <span class="preloader preloader-white"></span>
+                                </span>
+                                -->
+                                
+                                <!--
+                                <span class="badge bg-red" style="border-radius: 16px; padding: 9px 9px; margin-bottom: 15px;margin-top: 0px;">
+                                    <span class="preloader preloader-white" style="width: 16px;height: 16px; margin-left: -8px; margin-top: -20px;"></span>
+                                </span>
+                                -->
+                                <img src="images/preloader6.gif" style="height: 16px; width: 16px; margin-left: 20px; background-color: red;padding: 1px; border-radius: 16px;"></img>
+                                
+                                
+                            </div>
+                        </i>
+                        <span class="tabbar-label">Manage</span>
+                    </a>
+                    <a href="#view3" class="tab-link"> 
+                        <i class="icon ks-tabbar-icon-3 "></i>
+                        <span class="tabbar-label">Changes</span>
+                    </a>
+                    <a href="#view5" class="tab-link"> 
+                        <i class="icon ks-tabbar-icon-5">
+                        </i>
+
+                        <span class="tabbar-label">Installed</span>
+                    </a>
+                    <a href="#view4" class="tab-link"> 
+                        <i class="icon ks-tabbar-icon-4"></i>
+                        <span class="tabbar-label">Search</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup-welcome">
+         <div style="overflow:scroll; height: 100%;" class="main page-content">
+            <div class="block">
+               <div class="block">
+                  <center>
+                     <img class="animated slideInDown"  src="https://inuclearapp.org/beta/Jailbreak/cydia/logo.png" style="border-radius: 20%; margin-top: 40px; width: 125px">
+                     <h1 class="animated fadeInDown" style="margin-top: 10px; font-weight: 600; font-size: 35px;">Welcome to<br>HexBreak</h1>
+                     <p class="label" style="margin-top: 0px; font-weight: normal; font-size: 17px;">The All-New HexBreak. The World's #1 Virtual iPhone with a Virtual 'Jailbreak', which we call HexBreak. Please note that HexBreak is not affiliated in any way with Cydia. This is not a real jailbreak! Thank you and we hope you enjoy! (More features will be added soon.)</p>
+                     <br><br><br><br><br><br>
+                     <button href="#" class="popup-close link button button-big button-fill">Continue</button>
+                  </center>
+               </div>
+            </div>
+         </div>
+      </div>
+        <script type="text/javascript" src="dist/js/framework7.js"></script>
+        <script type="text/javascript" src="js/kitchen-sink.js"></script>
+        <script type="text/javascript" src="js/my-app.js"></script>
+
+          <script src="js/googleads.js"></script>
+          <script src="js/browser.js"></script>
+          <script src="js/download.js"></script>
+          <script src="js/detectOS.js"></script>
+          <script type="text/javascript">var switchTo5x=true;</script>
+          <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+          <script type="text/javascript">stLight.options({publisher: "bb014ec5-da58-474e-a8a7-60640301cdc9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+        <script>
+            $(document).ready(function(){
+                var randomtime1 = Math.floor(Math.random()*(7000-5000+1)+5000);
+                var randomtime2 = Math.floor(Math.random()*(4500-500+1)+500);
+                var randomtime3 = Math.floor(Math.random()*(4500-500+1)+500);
+                var randomtime4 = Math.floor(Math.random()*(4500-500+1)+500);
+
+
+                setTimeout(function(){
+                    $('#sources_loader').css("opacity","1.0");
+                }, 1000);
+
+                setTimeout(function(){
+                    $('#resouces_preloader1').css("opacity","0.0");
+                }, randomtime1-randomtime2 );
+                setTimeout(function(){
+                    $('#resouces_preloader2').css("opacity","0.0");
+                }, randomtime1-50 );
+                setTimeout(function(){
+                    $('#resouces_preloader3').css("opacity","0.0");
+                }, randomtime1-randomtime3 );
+                setTimeout(function(){
+                    $('#resouces_preloader4').css("opacity","0.0");
+                }, randomtime1-randomtime4 );
+
+                setTimeout(function(){
+                    $('#sources_loader').hide();
+                    
+                }, randomtime1);
+
+            });
+            
+        </script>
+<script type="text/javascript" src="js/themeplugin.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+<script type="text/javascript" src="js/inobounce.js"></script>
+<script type="text/javascript" src="lite.js"></script>
+        <script>
+            $$('.prompt-title-ok').on('click', function () {
+              myApp.prompt('', 'Enter HexBreak/APT URL', function (value) {
+                  myApp.alert('This feature is not available yet.', 'Error');
+              });
+            });
+            $$('.alert-text-title').on('click', function () {
+              myApp.alert('Copyright © 2018<br><br>iNuclearApp Team<br>support@inuclearapp.org<br>http://www.inuclearapp.org/', 'About HexBreak Installer');
+            });       
+        </script>
+        <script type="text/javascript" src="https://framework7io.github.io/framework7-template-single-view/framework7/js/framework7.min.js"></script>
+      <script type="text/javascript" src="lite/lite.js"></script>
+      <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    </body>
+</html>

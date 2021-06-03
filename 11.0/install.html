@@ -1,0 +1,64 @@
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>Install iPhoneMirror</title>
+		<link rel="stylesheet" href="css/framework7.ios.min.css">
+		<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+		<link rel="stylesheet" href="css/my-app.css">
+	</head>
+	<body>
+		<style id="custom-color"></style>
+		<div class="views">
+			<div class="view view-main" data-page="index">
+				<div class="pages">
+					<div data-page="index" class="page">
+						<div class="page-content">
+
+								<div style="color:white;">
+
+								</div>
+							 </li>
+							<div class="content-block-title">Install iPhoneMirror</div>
+							<div class="content-block">
+																<div class="content-block-inner">
+									<p>Thank you for choosing iPhoneMirror! There is one more step left to install it on your device!</p>
+									<p id="iphone" style="display: none;">Your Device: iPhone</p>
+									<p id="ipad" style="display: none;">Your Device: iPad</p>
+									<p id="ipod" style="display: none;">Your Device: iPod</p>
+									<p id="other" style="display: none;">Your Device: Unidentified! This App Only Works on iOS Devices!</p>
+								</div>
+
+							<p>	<a href="iPhoneMirror.mobileconfig" class="button button-big button-fill color-blue item-link item-content external">Install on your Device</a> </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+<script type="text/javascript">
+// Checking for the devices.
+// You can add more devices here.
+// Here we check if the user agent is a known mobile devices or not.
+if (navigator.userAgent.match(/iPhone/i)) {
+  // Here is the code to redirect user to mobile link.
+  document.getElementById("iphone").style.display = "block";
+}
+else if (navigator.userAgent.match(/iPad/i)) {
+	document.getElementById("ipad").style.display = "block";
+}
+else if (navigator.userAgent.match(/iPod/i)) {
+	document.getElementById("ipod").style.display = "block";
+}
+else {
+  document.getElementById("other").style.display = "block";
+}
+
+
+</script>
+
+</body>
+</html>

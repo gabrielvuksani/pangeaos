@@ -1,0 +1,53 @@
+/* Your app styles here */
+.ios .tabbar-labels .tab-link:not(.tab-link-active) .icon-ios-fill {
+  display: none;
+}
+.ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
+  display: none;
+}
+/******************/
+.ios .list {
+  margin-top:0!important;
+  margin-bottom:10px!important;
+}
+.ios .block-title {
+  margin: 10px 15px 10px!important;
+}
+.header{
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.buttons-row {
+  -ms-flex-item-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: none;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+/*packages*/
+.packageHeader{
+font-size: 22px!important;
+font-weight: bold!important;
+}
+
+/*packagesInstalledFiles*/
+.listItem{
+  height:25px!important;
+  font-size: 15px!important;
+}
+
+.cornerFix {
+  -webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+}
