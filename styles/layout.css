@@ -1,0 +1,422 @@
+html {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  background-image: '../15505.jpg';
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: 0.6px;
+  margin: 0px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 0.35px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 1.7px;
+}
+
+
+
+.button {
+  font-size: 18px;
+  font-weight: 500;
+  color: #F03354;
+  text-decoration: none;
+  display: inline-flex;
+  line-height: 19px;
+}
+
+.filled {
+  padding: 12px 30px 13px 30px;
+  border-radius: 1000px;
+  color: white;
+  background-color: #F03354;
+  text-decoration: none;
+}
+
+.circle {
+  padding: 16px 15px 14px 15px;
+  background-color: white;
+  border-radius: 100px;
+  margin: 0px 0px 0px 20px;
+}
+
+.glyph {
+  margin-left: 5px;
+}
+
+
+.darkspan {
+  color: #3E3752;
+}
+
+.grey {
+  background-color: rgba(152,149,162,.1); 
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+
+}
+
+.section a {
+  margin: 50px 0px 0px 0px;
+}
+
+.section_texts {
+  margin: 0px 0px 60px 0px;
+}
+
+.section_texts h1 {
+  margin: 0px;
+  color: #9A96A3;
+  text-align: center;
+}
+
+.section_texts h3 {
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+.section_texts p {
+  margin: 30px 0px 0px 0px;
+  text-align: center;
+}
+
+.section p {
+  text-align: center;
+}
+
+.featuresdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+.appsdiv {
+
+  margin: 0px 0px 30px 0px;
+ 
+}
+.iphoneipaddiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.iphoneipad {
+  width: 80%;
+  height: auto;
+  margin: 60px 0px;
+  align-self: center;
+}
+
+.support > .section_texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.unfilled {
+  margin: 20px 0px;
+}
+
+.buttonicon {
+}
+
+.buttonicon img {
+  position: relative;
+  left: 7px;
+  top: 1px;
+  width: 9px;
+}
+
+#floatingdiv {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f6f6f6;
+}
+
+
+
+
+@media only screen and (max-width: 420px) {
+
+  html {
+    
+  }
+
+  body {
+
+    padding: 0px 0px 50px 0px;
+    
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 39px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  h2 {
+    font-size: 20px;
+    letter-spacing: 0px;
+
+  }
+
+  h3 {
+    font-size: 13px;
+    line-height: auto;
+    letter-spacing: 0.6;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 27px;
+
+  }
+
+  
+
+  
+  
+
+  a {
+    text-decoration: none;
+  }
+
+  .button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #F03354;
+    text-decoration: none;
+  }
+
+  .filled {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 21px 11px 21px;
+    border-radius: 1000px;
+    color: white;
+    background-color: #F03354;
+    text-decoration: none;
+  }
+
+  .unfilled {
+    margin: 20px 0px;
+  } 
+
+  .glyph {
+    margin-left: 5px;
+  }
+
+  .section {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+  }
+
+  .section a {
+    margin: 30px 0px 0px 0px;
+  }
+
+  .section_texts {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+  }
+
+  .section_texts h1 {
+    margin: 0px;
+    color: #9A96A3;
+    text-align: left;
+  }
+  
+  .section_texts h3 {
+    margin: 0px 0px 15px 0px;
+    text-align: left;
+  }
+  
+  .section_texts p {
+    margin: 20px 0px 0px 0px;
+    text-align: left;
+  }
+
+ 
+
+
+
+
+  .featuresdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .feature:first-child {
+    margin-bottom: 0px;
+  }
+  .feature:last-child {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .featuresdiv
+
+  .thousandsapps {
+    overflow: hidden;
+  }
+
+  .responsiveness {
+    
+  }
+
+  .appsdiv {
+    margin: 30px 0px 30px -30px;
+    box-shadow: none !important;
+    padding: 0px 0px !important;
+  
+  }
+
+  .iphoneipad {
+    width: 100%;
+    height: auto;
+    margin: 40px 0px;
+  }
+
+  .support > .section_texts {
+    align-items: unset;
+  }
+
+  #floatingdiv {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+
+    z-index: 3000;
+
+    transform: translateY(60px);
+    opacity: 0;
+    transition: 0.6s cubic-bezier(0.2, 0.68, 0.36, 1.15)
+
+    
+ 
+  }
+
+  #floatingbutton {
+    display: block;
+    min-width: 85px;
+    text-align: center;
+    padding: 13px 30px;
+  
+
+   
+    box-shadow: 0 7px 43px 0 rgba(255,54,87,0.25); 
+   
+}
+
+  #floating_circlebutton {
+
+    box-shadow: 0 7px 43px 0 hsla(350, 0%, 61%, 0.15);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.21, 1.1) !important;
+  }
+}
+
+/* Footer */
+
+  #footer {
+    background: #272833;
+    padding: 6em 0;
+    text-align: center;
+  }
+
+    #footer .icons .icon.alt {
+      text-decoration: none;
+    }
+
+      #footer .icons .icon.alt:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+      }
+
+      #footer .icons .icon.alt:before {
+        color: #272833 !important;
+        text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
+      }
+
+    #footer .copyright {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.8em;
+      line-height: 1em;
+      margin: 2em 0 0 0;
+      padding: 0;
+      text-align: center;
+    }
+
+      #footer .copyright li {
+        border-left: solid 1px rgba(255, 255, 255, 0.3);
+        display: inline-block;
+        list-style: none;
+        margin-left: 1.5em;
+        padding-left: 1.5em;
+      }
+
+        #footer .copyright li:first-child {
+          border-left: 0;
+          margin-left: 0;
+          padding-left: 0;
+        }
+
+        #footer .copyright li a {
+          color: inherit;
+        }
